@@ -6,3 +6,139 @@
   /* Property example with a value */
 
 }
+/* font-family
+It priorities the names of the font that you use.
+There are a lot of names within font-family: serif, sans-serif, georgia, system-ui...etc.
+*/
+.font-family {
+  font-family: cursive;
+}
+/* font-size
+It measures the height or the width of the document, and it can be appplied in the unit of the size.
+There are 3 characters of font-size: absolute-size, relative-size and length-percentage.
+Option: x-smaller, smaller, xx-large, large...etc.
+*/
+.font-size {
+  font-size: large;
+}
+/* font-weight {
+  It specifies the weight of the text to be thicker or less thicker. It can use for making bold.
+*/
+.font-weight {
+  font-weight: bold;
+}
+/* font-style
+As its name, it makes a style of the text as you recomend to be the form of your text.
+*/
+.font-style {
+  font-style: italic;
+}
+
+/* font-height
+It specifies how height the dimension of your text is.
+*/
+.line-height {
+  line-height: 5em;
+}
+
+/* font-variant
+It represents the variation of your text as you change it.
+*/
+.font-variant {
+  font-variant: small-caps;
+}
+/* font-stretch
+It can add the faces of the sharacter to be narrower or wider than the normal.
+*/
+.font-stretch {
+  font-stretch: ultra-expanded;
+}
+/* font-size-adjust
+It gives you a choices between capital letters or lowercase by specifying with numbers.
+*/
+.font-size-adjust {
+  font-size-adjust: initial;
+}
+/* font-synthesis
+It can bold the text.
+*/
+.font-synthesis {
+  font-synthesis: bold;
+}
+/* letter-spacing
+It makes spaces of letters which is depends on what you have specify by using number.
+*/
+.letter-spacing {
+  letter-spacing: 10em;
+}
+/* word-spacing
+It gives spaces as you order it to be.
+*/
+.word-spacing {
+  word-spacing: 8em;
+}
+
+/* text-align
+It can change the place of a text.
+*/
+.text-align {
+text-align: center;
+}
+
+/* text-decoration
+It decorates a text. There are many characters like style, color, line...etc
+*/
+.text-decoration {
+  text-decoration: yellow;
+}
+
+/* text-decoration-line
+It is used for making a line as you specify it to be.
+*/
+.text-decoration-line {
+  text-decoration-line: line-through;
+}
+
+/* text-decoration-style
+It decorates the line which you have specify.
+*/
+.text-decoration-style {
+  text-decoration-line: overline;
+  text-decoration-style: dashed;
+}
+/* text-decoration-color
+It colors your text and it decorates your document like making a colorful line.
+*/
+.text-decoration-color {
+  text-decoration-line: underline;
+  background-color: yellow;
+  text-decoration-color: tomato;
+}
+
+/* text-indent
+It is used for making a space to be specified in the right or to the left.
+*/
+.text-indent {
+  text-indent: 30em;
+}
+
+/* text-transform
+It can control the capitalisation and transform text.
+*/
+.text-transform {
+  text-transform: uppercase;
+}
+
+/* vertical-align
+It makes vertical position.
+*/
+.vertical-align {
+  vertical-align: super;
+}
+
+/* white-space
+It is used for making space or line of text.
+*/
+.white-space {
+  white-space: pre;
+}
