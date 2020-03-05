@@ -42,12 +42,14 @@ It specifies how height the dimension of your text is.
 }
 
 /* font-variant
+It use for table, optional features or extures of numbers.
 It represents the variation of your text as you change it.
 */
 .font-variant {
   font-variant: small-caps;
 }
 /* font-stretch
+It sets how wide the text value
 It can add the faces of the sharacter to be narrower or wider than the normal.
 */
 .font-stretch {
@@ -79,7 +81,7 @@ It gives spaces as you order it to be.
 }
 
 /* text-align
-It can change the place of a text.
+It sets the position of text.
 */
 .text-align {
 text-align: center;
@@ -100,7 +102,7 @@ It is used for making a line as you specify it to be.
 }
 
 /* text-decoration-style
-It decorates the line which you have specify.
+It decorates the line which you have specified.
 */
 .text-decoration-style {
   text-decoration-line: overline;
@@ -137,6 +139,7 @@ It makes vertical position.
 }
 
 /* white-space
+HTML doesn't care about the space but white space controls how the space align is.
 It is used for making space or line of text.
 */
 .white-space {
