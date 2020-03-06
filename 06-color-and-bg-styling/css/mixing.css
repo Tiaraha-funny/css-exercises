@@ -1,0 +1,40 @@
+@charset "HTF-8";
+
+.dory_background {
+  background-color: cyan;
+  background-repeat: round;
+  background-size: 800px;
+  background-position: center;
+  background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5));
+  background-image: url(../images/bubble.png), url(../images/coral-reef.png), url(../images/crab.png);
+}
+
+.henry_background {
+  background-color: darkgray;
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-image: repeating-linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(1,1,255,0.37));
+  background-image: url(../images/sun.png);
+}
+.grass_clump {
+  background: position top 100, left 200rem, right 200rem, bottom;
+  background-repeat: repeat-x;
+  background-size: 100%;
+  background-image: url(../images/palm-2.png), url(../images/grass-clump.png);
+}
+.grass_left {
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 100%;
+  background-image: url(../images/grass-left.png);
+}
+
+.Lu-Sea_background {
+  background-color: cyan;
+  background-repeat: round;
+  background-size: 800px;
+  background-position: center;
+  background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5));
+  background-image: url(../images/beach-ball.png), url(../images/palm.png), url(../images/grass-tile.png);
+}
