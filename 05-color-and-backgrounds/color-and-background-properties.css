@@ -6,3 +6,71 @@
     /* Property example with a value */
 
   }
+
+/* Color
+It is used for coloring text.
+It gives a color value to decorates an element's text
+*/
+h1.color {
+  color: hsla(40, 50%, 60%, 2);
+  font-size: 50;
+  font-weight: bold;
+  background-color: lawngreen;
+  text-align: center;
+  padding: 5rem;
+  text-shadow: 3px;
+}
+
+/* Background-color
+It set for a backgroud color of an element.
+*/
+.background_color {
+  background-color: orange;
+}
+
+/* Background-image
+It sets a background image of an element
+*/
+a.background_image {
+  background-image: linear-gradient()
+}
+
+/* Background-repeat
+it makes repeatation of an image and specifies how is the shape or the position of that image.
+*/
+.background_repeat {
+  background-repeat: repeat-x;
+}
+
+/* background-position
+It sets the initial position of the image.
+*/
+.background_position {
+  background-position: 0em;
+}
+
+/* background-attachment
+It specifies the background image's position are fixed.
+*/
+.background_attachment {
+  background-attachment: fixed;
+}
+/* background-origin
+It sets the backfround's origin from the border start, inside the border or iside the padding.
+*/
+.background_origine {
+  background-origin: padding-box;
+}
+/* background-size
+It specifies the size of the backround image.
+*/
+.background_size {
+  background-size: 0em;
+}
+
+/* box-shadow
+It sets a shadow arround the element's frame by coloring it as you like it.
+*/
+.box_shadow {
+  box-shadow: 0em;
+}
