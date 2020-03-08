@@ -1,40 +1,33 @@
 @charset "HTF-8";
 
 .dory_background {
-  background-color: cyan;
-  background-repeat: round;
-  background-size: 800px;
-  background-position: center;
   background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5));
   background-image: url(../images/bubble.png), url(../images/coral-reef.png), url(../images/crab.png);
+  background-color: cyan;
+  background-repeat: repeat-y;
+  background-size: 900px, 1500px, 300px;
+  background-position: center, center bottom, left top;
 }
 
+.henry_background .bird {
+  background-position: right bottom;
+}
 .henry_background {
-  background-color: darkgray;
-  background-size: 10%;
-  background-repeat: no-repeat;
-  background-position: top right;
+  width: 46%;
+  height: 350px;
   background-image: repeating-linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(1,1,255,0.37));
-  background-image: url(../images/sun.png);
-}
-.grass_clump {
-  background: position top 100, left 200rem, right 200rem, bottom;
-  background-repeat: repeat-x;
-  background-size: 100%;
-  background-image: url(../images/palm-2.png), url(../images/grass-clump.png);
-}
-.grass_left {
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: 100%;
-  background-image: url(../images/grass-left.png);
+  background-image: url(../images/sun.png), url(../images/palm-2.png), url(../images/grass-clump.png), url(../images/grass-tile.png), url(../images/grass-left.png);
+  background-color: darkgray;
+  background-size:10%, 50%, 80% 500px, 80% 600px, 100% 600px;
+  background-repeat: no-repeat;
+  background-position: top right,left bottom, left bottom, right bottom, left bottom;
 }
 
 .Lu-Sea_background {
-  background-color: cyan;
-  background-repeat: round;
-  background-size: 800px;
-  background-position: center;
   background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5));
-  background-image: url(../images/beach-ball.png), url(../images/palm.png), url(../images/grass-tile.png);
+  background-image: url(../images/beach-ball.png), url(../images/grass-tile.png), url(../images/lu-seal.png), url(../images/bubble.png), url(../images/coral-reef.png);
+  background-color: cyan;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+  background-size: 30%, 100% 1000px, 20%, 20%, 100%;
+  background-position: top left, bottom, right, bottom, right bottom;
 }
