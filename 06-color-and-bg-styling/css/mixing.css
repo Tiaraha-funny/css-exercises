@@ -1,12 +1,36 @@
 @charset "HTF-8";
 
 .dory_background {
-  background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5));
-  background-image: url(../images/bubble.png), url(../images/coral-reef.png), url(../images/crab.png);
-  background-color: cyan;
-  background-repeat: repeat-y;
-  background-size: 900px, 1500px, 300px;
-  background-position: center, center bottom, left top;
+  width: 45%;
+  height: 400px;
+  background-image:
+                     url(../images/coral-reef.png),
+                     linear-gradient(0deg,
+                      yellow 150px,
+                       blue 60% 600px,
+                       skyblue 5% 100px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+div.crab {
+  background-image: url(../images/crab.png);
+  background-position: right bottom 50px ,100%;
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+div.bubble {
+  background-image: url(../images/bubble.png), url(../images/bubble.png);
+  animation: infinite;
+  animation-timing-function: 2s;
+  background-position: left;
+  background-size: 5%;
+  background-repeat: no-repeat;
+}
+.dory_background::after {
+  background-image: url(../images/bubble.png), url(../images/bubble.png);
+  animation: 3s;
+  animation-iteration-count: infinite;
 }
 
 .henry_background .bird {
@@ -15,19 +39,47 @@
 .henry_background {
   width: 46%;
   height: 350px;
-  background-image: repeating-linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(1,1,255,0.37));
-  background-image: url(../images/sun.png), url(../images/palm-2.png), url(../images/grass-clump.png), url(../images/grass-tile.png), url(../images/grass-left.png);
-  background-color: darkgray;
-  background-size:10%, 50%, 80% 500px, 80% 600px, 100% 600px;
+    background-image: url(../images/sun.png),
+                    url(../images/big-bird.png),
+                    url(../images/big-bird.png),
+                    url(../images/palm-2.png),
+                    url(../images/grass-clump.png),
+                    url(../images/grass-tile.png),
+                    url(../images/grass-left.png),
+                    repeating-linear-gradient(0deg,
+                    darkgray, lightblue, yellow);
+  background-size:
+   15%,
+   15%,
+   15%,
+   50%,
+   80% 300px,
+   80% 600px,
+   100% 600px,
+   100% 450px;
   background-repeat: no-repeat;
-  background-position: top right,left bottom, left bottom, right bottom, left bottom;
+  background-position:
+   top right,
+   left bottom,
+   right bottom,
+   left bottom,
+   right bottom,
+   bottom,
+   left bottom;
 }
 
 .Lu-Sea_background {
-  background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5));
-  background-image: url(../images/beach-ball.png), url(../images/grass-tile.png), url(../images/lu-seal.png), url(../images/bubble.png), url(../images/coral-reef.png);
+  background-image: linear-gradient(to bottom,
+   rgba(255,255,0,0.5),
+   rgba(0,0,255,0.5));
+  background-image: url(../images/beach-ball.png),
+   url(../images/grass-tile.png),
+   url(../images/lu-seal.png),
+   url(../images/bubble.png),
+   url(../images/coral-reef.png);
   background-color: cyan;
-  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+  background-repeat: no-repeat,
+   no-repeat, no-repeat, repeat;
   background-size: 30%, 100% 1000px, 20%, 20%, 100%;
   background-position: top left, bottom, right, bottom, right bottom;
 }
