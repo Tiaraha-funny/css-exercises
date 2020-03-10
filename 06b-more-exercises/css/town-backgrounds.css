@@ -1,0 +1,96 @@
+@charset "HTF-8";
+
+html {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  width: 350px;
+  height: 350px;
+}
+
+#sky {
+display: flex contents;
+position: relative;
+}
+
+#cloud-1 {
+  background-image: url(../images/cloud.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 60px 50px;
+}
+#cloud-2 {
+  background-image: url(../images/cloud.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 60px 50px;
+}
+
+.house {
+
+}
+.house {
+
+}
+
+#sun {
+background-image: url(../images/sun.svg);
+background-position: top center right 80%;
+background-repeat: no-repeat;
+}
+
+#countryside {
+position: relative;
+background-position: bottom 100%;
+}
+
+#town {
+background-position: bottom 100%;
+}
+#house-1 {
+  background-image: url(../images/house-1.svg);
+  position: absolute;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+#house-2 {
+background-image: url(../images/house-2.svg);
+position: absolute;
+background-size: 70%;
+background-repeat: no-repeat;
+background-position: bottom;
+}
+
+#tree {
+background-image: url(../images/tree.svg);
+background-position: center 50%;
+flex-direction: row;
+background-size: 100px 70px 14px;
+}
+#palm {
+background-image: url(../images/palm-tree.svg);
+background-position: bottom right;
+background-size: 100%;
+background-repeat: no-repeat;
+}
+.plant {
+ background-size: 100px 70px 50px;
+ height: 90%;
+}
+#road {
+background-size: 100%;
+}
+#car {
+background-image: url(../images/car.svg);
+background-size: 70px 70px;
+background-position: bottom;
+background-repeat: no-repeat;
+}
