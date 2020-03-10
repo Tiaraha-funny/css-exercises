@@ -91,6 +91,6 @@ background-size: 100%;
 #car {
 background-image: url(../images/car.svg);
 background-size: 70px 70px;
-background-position: bottom;
+background-position: bottom left;
 background-repeat: no-repeat;
 }

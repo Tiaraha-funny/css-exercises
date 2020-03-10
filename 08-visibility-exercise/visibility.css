@@ -1,0 +1,18 @@
+@charset "HTF-8";
+
+nav a {
+  visibility: hidden;
+}
+
+[data-bg-color="yellow"],
+ [data-bg-color="blue"],
+tr:nth-of-type(2){
+display: none;
+}
+td span {
+display: none;
+}
+
+span {
+opacity: 0.5;
+}
