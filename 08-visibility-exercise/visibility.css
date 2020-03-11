@@ -1,15 +1,16 @@
 @charset "HTF-8";
 
-nav a {
+nav li {
   visibility: hidden;
+}
+nav li:first-child {
+  visibility: visible;
 }
 
 [data-bg-color="yellow"],
  [data-bg-color="blue"],
+td span,
 tr:nth-of-type(2){
-display: none;
-}
-td span {
 display: none;
 }
 

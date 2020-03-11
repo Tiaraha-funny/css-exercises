@@ -5,3 +5,28 @@
   */
     /* Property example with a value */
   }
+
+
+/* Content-box
+It is the content which sized by the width and height that inside the margin and the padding.
+*/
+ html {
+   display: flex;
+   justify-content: center;
+   height: 100%;
+   flex-direction: column;
+   align-items: center;
+ }
+ h1 {
+   font-family: inherit;
+
+ }
+div {
+  width: 200px, 400px, 400px, 200px;
+  padding: 50px;
+  border: 3px solid red;
+  margin: 20px;
+}
+
+
+/**/
