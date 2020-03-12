@@ -10,23 +10,80 @@
 /* Content-box
 It is the content which sized by the width and height that inside the margin and the padding.
 */
+content-box {
+  margin: auto;
+}
+/* Padding-box
+It is a box between content and margin.
+*/
+padding-box {
+padding: 40px;
+}
+/* Border-box
+It is a border box which wrap the content and the padding.
+*/
+Border-box {
+  border: aliceblue;
+}
+
+/* Diagram of the box model*/
  html {
    display: flex;
-   justify-content: center;
-   height: 100%;
+   justify-content: top;
+   height: 500%;
    flex-direction: column;
    align-items: center;
+}
+ p {
+   background-position: 200px, 400px, 400px, 200px;
+   width: 600px;
+   content: url(../09-box-model/diagram.png);
+   height: 100%;
  }
- h1 {
-   font-family: inherit;
 
- }
 div {
-  width: 200px, 400px, 400px, 200px;
-  padding: 50px;
-  border: 3px solid red;
-  margin: 20px;
+  width: 10px, 90px, 50px, 50px;
+  padding: 20px;
+  border: 3px solid black;
+  margin: 10px;
 }
 
 
-/**/
+/*border (and its longhand properties)
+MDN web docs explanes that shorthand properties are CSS properties that let you set the values of multiple other CSS properties simultaneously. Using a shorthand property, you can write more concise (and often more readable) style sheets, saving time and energy.
+From that explanation we can define that it can spacify background uses.
+*/
+/*margin (and its longhand properties)
+Sonar source give deeply infomation that a shorthand property defined after a longhand property will completely override the value defined in the longhand property making the longhand one useless. The code should be refactored to consider the longhand property or to remove it completely.
+*/
+
+/* padding (and its longhand properties)
+Padding has length and percentage values.
+*/
+
+/*Display
+It is specified using keyword value and determined the boxes in an element which relate with an element. Its value has 6 category: outside, inside, internal, listintem, ligacy, box.
+*/
+nav {
+  display: inline;
+}
+
+/* Box-sizing
+It specified the measure of the width and the height properties.
+*/
+box-sizing {
+  box-sizing: border-box;
+}
+/* What happens when two differently sized margins of two different boxes collide?
+May be it is nesting each other.
+
+What is the formula for working out an element's visual width? How is this different when using box-sizing: border-box; on the element?
+I think, the box-sizing is the specifing the size of the box but the border-box is the border's size.
+
+What is the difference between display values inline, inline-block, and block?
+*/
+
+
+/* Remark from (CSS tricks) about box sizing:
+Today, the current versions of all browsers use the original "width or height + padding + border = actual width or height" box model. "With box-sizing: border-box", we can change the box model to what was once the "quirky" way, where an element's specified width and height aren't affected by padding or borders. This has proven so useful in responsive design that it's found its way into reset styles.
+*/
