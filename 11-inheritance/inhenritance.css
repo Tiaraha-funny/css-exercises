@@ -1,0 +1,66 @@
+@charset "HTF-8";
+/* What do we mean by CSS inheritance? What does it affect?
+
+Inhenritance is a typical properties and always from the parent. It also can controle the effect of the properties have no value on an element.
+It doesn't affect changes because it follows what the parents's deeds.
+
+    CSS web docs stengthen that exaplanation about it:
+    For inherited properties, this reinforces the default behavior, and is only needed to override another rule. For non-inherited properties, this specifies a behavior that typically makes relatively little sense and you may consider using "initial" instead, or "unset" on the all property.
+
+      "Use this CSS reference to browse an alphabetical index of all of the standard CSS properties, pseudo-classes, pseudo-elements, data types, and at-rules. You can also browse key CSS concepts and a list of selectors organized by type. Also included is a brief DOM-CSS / CSSOM reference."
+*/
+
+/* Which properties have values that are inherited by default?
+
+I think all properties can have value that are inherited by default which can have other values: initial, all, unset including inherit.
+
+One item not in the list was "text-decoration" which affects child elements. A few new properties (text-shadow) also affect child elements
+
+GITHUB Gist: dcneiner/gist:1137601 gives list of it:
+
+azimuth
+border-collapse
+border-spacing
+caption-side
+color
+cursor
+direction
+elevation
+empty-cells
+font-family
+font-size
+font-style
+font-variant
+font-weight
+font
+letter-spacing
+line-height
+list-style-image
+list-style-position
+list-style-type
+list-style
+orphans
+pitch-range
+pitch
+quotes
+richness
+speak-header
+speak-numeral
+speak-punctuation
+speak
+speech-rate
+stress
+text-align
+text-indent
+text-transform
+visibility
+voice-family
+volume
+white-space
+widows
+word-spacing
+*/
+
+/*What is the difference between the currentColor and inherit keywords when used with colour values?
+
+*/
