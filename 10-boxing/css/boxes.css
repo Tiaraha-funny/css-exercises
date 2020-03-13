@@ -39,7 +39,7 @@ td:nth-child(3) {
 }
 
 footer {
-  margin: 1rem;
+  margin: 1rem 0rem;
   padding: 1rem;
 }
 footer > span {
