@@ -1,0 +1,12 @@
+@charset "HTF-8";
+/* Let's set any general defaults here:
+@import "defaults.css";*/
+
+html{
+  display: block;
+  width: 1000px;
+}
+body {
+  display: block;
+  width: 1000px;
+}

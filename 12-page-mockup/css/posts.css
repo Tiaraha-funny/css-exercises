@@ -1,0 +1,31 @@
+article {
+  display: block;
+  margin: 10rem;
+}
+
+h3.h3 {
+  display: block;
+  border: 2px;
+}
+
+.li-1 {
+  display: inline;
+ text-align: center;
+ list-style-type: none;
+ border: 1rem;
+ margin-block-end: 0rem;
+ margin-block-start: 0rem;
+ padding-inline-start: 2rem;
+ padding-inline-end: 2rem;
+}
+.li-2 {
+  display: inline;
+  text-align: center;
+  list-style-type: none;
+}
+#p a[href="/lost_in_madagascar/jesse"] {
+color: black;
+}
+a [href="/lost_in_madagscar/jesse"] {
+  color: black;
+}

@@ -1,0 +1,7 @@
+/* The copyright and social layout for the footer
+@import "footer.css";*/
+footer {
+  background-position: center;
+  list-style-type: none;
+  text-align: center;
+}

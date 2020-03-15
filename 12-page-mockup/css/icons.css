@@ -1,0 +1,8 @@
+img {
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  width: 32px;
+  height: 32px;
+}

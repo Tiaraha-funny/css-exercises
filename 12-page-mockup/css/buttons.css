@@ -1,0 +1,9 @@
+/* Decorative links that look like buttons
+@import "buttons.css";*/
+a[href="/lost_in_madagascar/jesse/Older_post"] {
+  background-color: blue;
+  color: white;
+  margin-inline-end: 1rem;
+  width: 10px;
+  height: 5p;
+}
