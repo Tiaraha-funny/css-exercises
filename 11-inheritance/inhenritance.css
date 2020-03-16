@@ -62,9 +62,11 @@ word-spacing
 */
 
 /*What is the difference between the currentColor and inherit keywords when used with colour values?
-
+Currentcolor is specify the normal color but the inherit keyword is to keep the form which the parents had.
 */
 /*What do the revert, initial, and unset keyword values do?
+Revert and initial are used to apply the property value initial which don't follow whatever the effect of the inheritance value, and the unset is an element which is inherited value.
+
 Are there any dangers or unintended side-effects when using inherit as a value? What about the revert, initial and unset properties?
 What are the possibilities with using an ancestor or universal selector, combined with the inherit value?
 */
