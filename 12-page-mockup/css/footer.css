@@ -1,7 +1,24 @@
 /* The copyright and social layout for the footer
 @import "footer.css";*/
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* let the footer elementy
+*/
 footer {
-  background-position: center;
-  list-style-type: none;
   text-align: center;
+  margin: 3rem;
+}
+footer li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+footer li:not(:first-child):not(:last-child) {
+  margin-inline-start: 2rem;
+  margin-inline-end: 2rem;
+}
+footer p {
+
 }
