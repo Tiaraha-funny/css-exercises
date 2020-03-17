@@ -60,13 +60,30 @@ white-space
 widows
 word-spacing
 */
-
+p {
+  border-color: inherit;
+  border-color: currentColor;
+}
 /*What is the difference between the currentColor and inherit keywords when used with colour values?
-Currentcolor is specify the normal color but the inherit keyword is to keep the form which the parents had.
+CurrentC takes the color which sets in the color inherit.
+Currentcolor is specify the normal color but the inherit keyword is to keep the form which the parents had.(Cascade)
 */
+p {
+  color: red;
+  color: revert;
+}
 /*What do the revert, initial, and unset keyword values do?
+Revert makes the value to go back to the inheritent value.
+Initial appplys the default value.
 Revert and initial are used to apply the property value initial which don't follow whatever the effect of the inheritance value, and the unset is an element which is inherited value.
 
-Are there any dangers or unintended side-effects when using inherit as a value? What about the revert, initial and unset properties?
+Are there any dangers or unintended side-effects when using inherit as a value?
+It's danger because some properties not applies inherit value.
+
+What about the revert, initial and unset properties?
+It may lose all of the color which you've specified.
+
 What are the possibilities with using an ancestor or universal selector, combined with the inherit value?
+Trippy=cool.
+
 */
