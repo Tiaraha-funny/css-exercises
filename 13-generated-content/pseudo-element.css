@@ -1,0 +1,90 @@
+/* PSEUDO-ELEMENT
+
+It is almost element but it isn't.
+Do you know what that special property is?
+It is a content.
+
+What functions can we use in that property's value?
+We need to use single colon and double colons.
+
+What are the various pseudo-elements?
+::before
+::after
+::first-letter
+::grammar-error
+::backdrop
+::cue
+::cue-region
+::first-line :
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+Why would we use pseudo-elements?
+We use pseudo-element to specify properties' needs.
+*/
+
+/* COUNTERS
+
+How do we count in CSS - i.e.
+We can multiply or plus the number of the size which we need.
+what declaration do we use?
+
+MDN web doc explane about it that:
+To use a CSS counter, it must first be initialized to a value with the counter-reset property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter's value can be increased or decreased with counter-increment. The counter's name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
+
+How do we reset a counter?
+To reset a count we need to use count-reset by following chapter-count value.
+
+What are counters useful for?
+It is useful for the counter function by returning developement define strings.
+In general it used for the pseudo element.
+*/
+
+/* LISTS
+
+Name as many properties as you can that are only related to lists
+
+- list-style
+- list-style-type
+- list-styl-position
+- list-style-image
+- list-group
+- list-groupe-item
+- ::-moz-list-bullet
+- ::-moz-list-number
+
+What types of bullet styles are there?
+- circle
+- disc
+- square
+- decimal
+- decimal-leading-zero
+- lower-roman
+- upper-roman
+- lower-greek
+- lower-latin
+- upper-latin
+- armenian
+- georgian
+- lower-alpha
+- upper-alpha
+- none
+
+Can any group of elements be styled to look like a list?
+I think so. For exemple: nav and div.
+
+*/
+/*We use absolute unit, relative unit and color unit.
+- Unit: cm, mm, m, pc, px, pt.
+- Viewport: rem, em, %.
+- color: rgb, rgba, nex, hsl, hsla.
+to measure the width or height in css.
+*/
