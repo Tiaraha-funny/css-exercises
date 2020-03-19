@@ -19,9 +19,49 @@
     …
 */
 
-/* Section
-    margin: 0rem;
-    margin-left: 32rem;
-    margin-top: -2rem;
+html {
+  display: block;
+  width: 80rem;
 }
-*/
+
+body {
+  counter-reset: section;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+h1 {
+  visibility: hidden;
+}
+article > header {
+  font-size: 2rem;
+}
+
+section {
+  display: inline-block;
+  margin: 0rem;
+  margin-left: 32rem;
+  margin-top: -2rem;
+}
+
+h3 {
+  counter-reset: subsection;
+  font-size: 2.53rem;
+}
+h3::before {
+  content: counter(section)".\0000a0\0000a0";
+  counter-increment: section;
+}
+
+h4:before {
+  content: counter(section)"." counter(subsection)".";
+  counter-increment: subsection;
+}
+ol {
+  list-style-type: lower-latin;
+  padding: 1rem;
+}
+
+ol > li > ol {
+  list-style-type: lower-roman;
+  padding: 1rem;
+}
