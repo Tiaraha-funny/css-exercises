@@ -19,7 +19,7 @@
     …
 */
 
-/*html {
+html {
   display: block;
   width: 80rem;
 }
@@ -64,12 +64,12 @@ ol {
 ol > li > ol {
   list-style-type: lower-roman;
   padding: 1rem;
-}*/
-section > h3 > h4 > ol > li::before{
+}
+/*section > h3 > h4 > ol > li::before{
   display: inline-list-item;
   counter-reset: subsection;
   content: counter(major-clause)"." counter(clause)"." counter(list)".";
   counter-increment: subsection;
   list-style-position: outside;
   list-style-type: lower-latin;
-}
+*/}

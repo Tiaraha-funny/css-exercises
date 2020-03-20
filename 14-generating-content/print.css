@@ -1,20 +1,39 @@
 /* Styles for all mediums go here */
-@media all {
+@media screen {
 body {
   margin: 2rem;
   line-height: 100%;
   background: #ffffff;
-  color: #ffffff;
-  background-color: #000000;
-  font-size: 20pt;
+  background-color: #0000;
+  font-size: 20px;
+  line-height: 2rem;
 }
+h2 {
+  margin: 2px;
+}
+/*tenrec on wikipedia [https:../]*/
+a::after {
+  content: "[" attr(href)"]";
+  word-break: break-word;
+}
+abbr::after {
+  content: "[" attr(title)"]";
+}
+blockquot::after {
+  content: "[" attr(cite)"]";
+}
+time::after {
+  content: "[" attr(datetime)"]";
 }
 
 /* Only styles for printers please */
 @media print {
-body {
-  margin: 0;
-  color: #000000;
-  background-color: #ffffff;
-}
-}
+  body {
+    margin: 2rem;
+    line-height: 100%;
+    background: #ffffff;
+    background-color: #0000;
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  }
