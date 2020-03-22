@@ -1,13 +1,12 @@
 @charset "HTF-8";
 body {
   table-layout: auto;
-  width: 800px;
+  width: 700px;
   border: 1px solid;
   display: table;
 }
 section {
-  display: table-row;
-  table-layout: auto;
+  display: table;
   border-spacing: 16px;
 }
 h2 {
