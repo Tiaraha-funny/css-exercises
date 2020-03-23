@@ -1,1 +1,11 @@
-
+@charset "HTF-8";
+#overflow_invisible.overflow {
+white-space: nowrap;
+}
+.example:first-of-type {
+  overflow: auto;
+}
+.example:not(:first-of-type) {
+  position: absolute;
+  clip-path: circle(10%);
+}

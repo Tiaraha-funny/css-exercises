@@ -16,8 +16,8 @@ text-overflow: ellipsis
 What are their default values?
 - overflow, there is overflow-x and -y: by default visible ; hidden, scroll, auto, clip, hidden visible.
 - clip: by default auto; shape() or rect( top, bottom, right, left.) rect(auto, auto auto, auto.)
-- clip-path: by default clip-resource : url(); basic-shape, geometry-box, margin-box, padding-box, content-box, border-box, fill-box, stroke-box, view-box.
-- text-overflow: ellipsis: It makes the text wrap inside the content area but it gives like dot to aske reader that there is still text after. Clip, string, fade and fade(lenght, parcentage)
+- clip-path: by default clip-resource : url(); circle, ellipse, polygon, inset, path.
+- text-overflow: ellipsis: It makes the text wrap inside the content area but it gives like dot to aske reader that there is still text after. Clip, ellipse, string, fade and fade(lenght, parcentage)
 
 Why would we use these properties? What makes them useful?
 It is useful for long long content or text to fit in a box.
@@ -58,7 +58,6 @@ section {
   clip-path: circle(top);
   padding-left: 1rem;
 }
-
 </style>
 <body>
   <header>
