@@ -1,18 +1,17 @@
 @charset "HTF-8";
 body {
-  table-layout: auto;
-  width: 700px;
+  table-layout: fixed;
+  width: 550px;
   border: 1px solid;
-  display: table;
+  display: table-cell;
 }
 section {
   display: table;
-  border-spacing: 16px;
+  border-spacing: 10px;
 }
 h2 {
 display: table-cell;
 vertical-align: middle;
-table-layout: auto;
 padding-left: 120px;
 }
 footer {

@@ -13,14 +13,15 @@ The border-spacing CSS property sets the distance between the borders of adjacen
 It may has a fixe value by using one or two lengths
 
 3- border-collapse
-Collapse and Separated.
+Collapse and
+Separated by default.
 
 Explanation from MDN:
 When cells are collapsed, the border-style value of inset behaves like groove, and outset behaves like ridge.
 When cells are separated, the distance between cells is defined by the border-spacing property.
 
 4- caption-side
-Top: above the table
+Top by default: above the table
 Bottom: below of the table
 Top-outside: the width and the horizontal align are not bound to the tables's horizontal layout.
 Bottom-outside: the width and the horizontal align are not bound to the tables's horizontal layout.
@@ -30,7 +31,8 @@ Right: right-side of the table.
 (non-standart and global values: right, outside, inherit, initial and unset)
 
 5- empty-cells
-Show and Hide values
+Show by default.
+ and Hide values
 */
 
 /* What HTML elements do these values correspond to?
@@ -40,7 +42,7 @@ table-header-group = thead
 table-footer-group = tfoot
 table-row = tr
 table-cell = th, tr, td.
-table-column-group = col (thead)
+table-column-group = colgroup (thead)
 table-column = td
 table-caption = tfoot, thead.
 
@@ -58,14 +60,15 @@ vertical-align
  It requires border-collapse: separated.
 
 What are the downsides of using the various table* values for display on a set of elements, thereby simulating a table layout on non-table elements?
-
+Dis: maybe we don't have html which we want so we need to create the html element like div or nav.
+Tabular is a table has rows and columns. If you use tabular html you can't use that in css.
 
 What is the difference between table-layout: fixed and table-layout: auto?
 Fixed: needs to set by the width.
-Auto: it is automaticly to form as a table.
+Auto: it is automaticly to form as a table. It is bassed on the width of the content.
 
 Can you use border-spacing and other table-like properties on non-table elements?
-No we can not.
+Yes we can use it in html element but we need to use display as a table.
 
 What other declaration does empty-cells require before it can work effectively?
 It has the same require as border spacing, it needs separated as the value of border-collapse.
