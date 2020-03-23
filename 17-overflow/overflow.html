@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overflow</title>
+</head>
+<style>
+  /*
+overflow
+clip
+clip-path
+text-overflow: ellipsis
+*/
+/*
+What are their default values?
+- overflow, there is overflow-x and -y: by default visible ; hidden, scroll, auto, clip, hidden visible.
+- clip: by default auto; shape() or rect( top, bottom, right, left.) rect(auto, auto auto, auto.)
+- clip-path: by default clip-resource : url(); basic-shape, geometry-box, margin-box, padding-box, content-box, border-box, fill-box, stroke-box, view-box.
+- text-overflow: ellipsis: It makes the text wrap inside the content area but it gives like dot to aske reader that there is still text after. Clip, string, fade and fade(lenght, parcentage)
+
+Why would we use these properties? What makes them useful?
+It is useful for long long content or text to fit in a box.
+
+What other properties need to be set before these properties can work effectively?
+It needs display table. Width, height and border. white-space = nowrap.
+*/
+/*
+What is the browser's default way to handle contents that are larger than its container?
+Text-overflow: ellipsis
+width and height.
+
+What is an Ellipsis?
+It is a deliberately left out of a sentences but the meaning is still understandable. Instead of countinuing the sentece, you can use "...".
+
+How is that different from an Ellipse?
+It is used with clip-path and decoration for image or picture. To put it in an oval or circle.
+
+How is text-overflow different from the other properties?
+It affects in a long content and keep the meaning of the visible sentences or words. But others are just decorate and to make content fit enough of the box.
+*/
+body {
+  height: 10px;
+  white-space: nowrap;
+  display: table-row;
+  width: 10px;
+  text-overflow: ellipsis;
+}
+h2 {
+  border-collapse: separate;
+  border-spacing: 1rem;
+  clip: rect(top, bottom, left, right);
+}
+section {
+  display: table-cell;
+  table-layout: auto;
+  overflow: hidden;
+  clip-path: circle(top);
+  padding-left: 1rem;
+}
+
+</style>
+<body>
+  <header>
+    <h1>Overflow</h1>
+  </header>
+  <section>
+    <h2>Clip</h2>
+    <h2>Clip-path in the second row above the sky.</h2>
+    <h2>Text-overflow</h2>
+  </section>
+</body>
+</html>
