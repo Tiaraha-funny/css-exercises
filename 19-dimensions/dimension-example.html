@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimensions</title>
+</head>
+<style>
+/*
+Width
+min-width:none
+max-width:none
+
+Height
+min-height:none
+max-height:none
+
+What are the default values for these properties?
+width by default content area which is auto or border area using box-sizing: border-sizing.
+height by default defines with the content area which calls auto or box-sizing: border-sizing if it is border area.
+
+Do these default values change if the element is a block-like or an inline-like element?
+
+What happens if a min-width value is greater than a width value?
+It gives a change for the content.
+The element's width is set to the value of min-width whenever min-width is larger than max-width or width.
+
+Similarly, what happens if a max-width value is less than a width value?
+max-width overrides width, but min-width overrides max-width.
+
+Similarly, what happens if a min-width value is greater than a max-width value?
+max-width overrides width, but min-width overrides max-width.
+Override = to use a power to change sth's plan or deed.
+
+What happens when widths are applied to table cells, and the content inside these cells doesn't fit?
+Table: the text scrolls down.
+Simple form: The content just overflows outside the specific width.
+
+What's the deal with height and percentage values?
+It contains the block's height.
+
+Percent of what!?
+Percentage of length.
+*/
+
+/*
+What are all the significant or interesting characteristics of this ruleset?
+What is the implied width of a div?
+*/
+body {
+  display: table;
+  table-layout: auto;
+  height: 10%;
+}
+h1 {
+table-layout: auto;
+width: 20px;
+}
+
+div {
+  min-width: 5rem;
+  max-width: 80vw;
+}
+</style>
+<body>
+<header>
+  <h1>Width</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, laborum eveniet! Ut eaque sequi iste similique consequuntur quos at quas iusto, saepe cum, sint ea quisquam expedita nulla eos tempore.</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quae laborum explicabo delectus consequatur. Labore neque ipsa, amet dolor enim repellendus ut, voluptate ratione autem eligendi dolorum facilis pariatur rerum?</p>
+  <h1>Height</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima animi exercitationem commodi quisquam adipisci sed eaque dignissimos libero a tenetur aspernatur eius magni similique sapiente corrupti repellendus assumenda, hic modi!</p>
+</header>
+<div>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium eos perferendis minus provident.
+</div>
+</body>
+</html>

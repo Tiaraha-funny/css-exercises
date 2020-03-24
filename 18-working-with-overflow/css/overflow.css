@@ -21,18 +21,17 @@ section#overflow_scroll.overflow .example:not(:first-of-type) {
 overflow: scroll;
 }
 section#clipping_circle.clipping .example {
-clip-path: circle(63px at  386px 145px);
+clip-path: circle(45% at  64.5% 25%);
 overflow: hidden;
 }
 section#clipping_poly.clipping .example {
-clip-path: polygon(94% 50%, 83% 32%, 56% 44%, 82% 70%);
+clip-path: polygon(94% 48%, 98% 40%, 55% 42%, 81% 70%);
 }
 section#overclip.clipping .example {
-  overflow: auto;
-  clip-path: circle(40px);
+  clip-path: circle(30% at 52.5% 49%);
 }
 section#overflow_ellipsis.ellipsis .example {
-  white-space: nowrap;
+white-space: nowrap;
 text-overflow: ellipsis;
 overflow: hidden;
 }
