@@ -1,11 +1,38 @@
-@charset "HTF-8";
-#overflow_invisible.overflow {
+@charset "UTF-8";
+section#overflow_invisible.overflow {
 white-space: nowrap;
 }
-.example:first-of-type {
+section#overflow_invisible.overflow .example:first-of-type {
   overflow: auto;
 }
-.example:not(:first-of-type) {
-  position: absolute;
-  clip-path: circle(10%);
+section#overflow_invisible.overflow .example:not(:first-of-type) {
+clip-path: circle(100%);
+overflow: auto;
+text-overflow: clip;
+}
+
+section#overflow_scroll.overflow {
+  white-space: normal;
+}
+section#overflow_scroll.overflow .example:first-of-type {
+  overflow: scroll;
+}
+section#overflow_scroll.overflow .example:not(:first-of-type) {
+overflow: scroll;
+}
+section#clipping_circle.clipping .example {
+clip-path: circle(63px at  386px 145px);
+overflow: hidden;
+}
+section#clipping_poly.clipping .example {
+clip-path: polygon(94% 50%, 83% 32%, 56% 44%, 82% 70%);
+}
+section#overclip.clipping .example {
+  overflow: auto;
+  clip-path: circle(40px);
+}
+section#overflow_ellipsis.ellipsis .example {
+  white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
 }
