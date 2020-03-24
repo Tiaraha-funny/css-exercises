@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+.example [src="../06-color-and-bg-styling/images/big-bird.png"] {
+max-width: 45rem;
+height: auto;
+}
+.table_container {
+  min-width: 20rem;
+  overflow: visible;
+  text-overflow: clip;
+}
