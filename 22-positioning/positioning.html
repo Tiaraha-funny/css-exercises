@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning</title>
+</head>
+<style>
+  /*
+Position properties
+relative
+absolute
+fixed
+sticky
+
+First up though, what is the default value for position?
+Static
+
+What are some of the other properties you need to supply when using any non-default position value?
+The others are computed value means transfered from the inheritance. It is calculated from the specified value.
+
+What is the inferred display value of an element that has been positioned?
+It overrides the value of the display.
+
+One of the non-default values for position still maintains a box in the flow of the document. Which one is it?
+Position: relative.
+
+What is special or significant about fixed and sticky positioning?
+these can be used to create a "floating" element that stays in the same position regardless of scrolling.
+
+When positioning an element absolutely, how can we lock that element's coordinates to its parent element?
+We need to specify the both left and right value.
+It is claimed that The absolutely positioned element is positioned relative to its nearest positioned ancestor (i.e., the nearest ancestor that is not static). If a positioned ancestor doesn't exist, it is positioned relative to the ICB (initial containing block) (MDN webdocs.)
+
+What are absolute positioned layouts useful for?
+It is useful for printing.
+W3C mention that: For absolutely positioned content that resolves to a position on a page other than the page being laid out (the current page), or resolves to a position on the current page which has already been rendered for printing, printers may place the content.
+Containing block and staking context.
+
+Sometimes if you put two absolutely positioned elements in the same physical space, they'll stack, i.e. only one will be visible on top. What are the rules here?
+
+ Why is a certain element on top?
+ Because absolute element does not have space.
+
+ How can we adjust that ourselves?
+
+What is CSS's 'Stacking Context'?
+The stacking context is a three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user, who is assumed to be facing the viewport or the webpage.
+*/
+h1 {
+  display: block;
+  position: absolute;
+  font-size: 0rem;
+}
+</style>
+<body>
+<header>
+  <h1>Position</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit esse impedit perferendis, exercitationem doloribus laudantium temporibus! Laudantium pariatur fuga dicta esse quidem nesciunt eveniet ipsam, alias necessitatibus ea repudiandae iure?</p>
+</header>
+</body>
+</html>
