@@ -1,0 +1,34 @@
+section:nth-of-type(2) div {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  z-index: -3;
+}
+section:nth-of-type(2) .example svg:nth-of-type(1) {
+  width: 100%;
+  height: 87%;
+  bottom: 64px;
+  right: 78px;
+  position: relative;
+}
+section:nth-of-type(2) .example svg:nth-of-type(2) {
+  width: 100%;
+    height: 92%;
+    bottom: 71px;
+    right: 82px;
+    position: relative;
+}
+section:nth-of-type(2) .example svg:nth-of-type(3) {
+  width: 100%;
+    height: 92%;
+    bottom: 441px;
+    right: -97px;
+    position: relative;
+}
+section:nth-of-type(2) .example svg:nth-of-type(4) {
+  width: 100%;
+    height: 100%;
+    bottom: 446px;
+    right: -95px;
+    position: relative;
+}

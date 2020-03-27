@@ -1,0 +1,47 @@
+/*
+You'll need to use:
+
+position
+top, right, bottom, and left
+width and height
+overflow
+and z-index
+*/
+
+section:nth-of-type(1) .example {
+  width: auto;
+  height: 200px;
+}
+
+section:nth-of-type(1) .example svg:nth-of-type(1) {
+  position: absolute;
+  z-index: 0;
+  width: 10%;
+  height: 8%;
+  bottom: -14%;
+  left: 10.5%;
+}
+section:nth-of-type(1) .example svg:nth-of-type(2) {
+position: absolute;
+z-index: 0;
+  width: 10%;
+  height: 8%;
+  top: 81.85%;
+  left: -0.75%;
+}
+section:nth-of-type(1) .example svg:nth-of-type(3) {
+position: absolute;
+z-index: 0;
+width: 10%;
+height: 8%;
+bottom: -14%;
+left: -1%;
+}
+section:nth-of-type(1) .example svg:nth-of-type(4) {
+  position: absolute;
+z-index: 0;
+width: 10%;
+height: 10%;
+bottom: 10%;
+left: 10%;
+}
