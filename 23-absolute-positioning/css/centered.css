@@ -1,6 +1,24 @@
+section:nth-of-type(3) .container {
+  position: relative;
+  height: 200px;
+}
+
 section:nth-of-type(3) .example svg:nth-of-type(2) {
-  width: 17%;
-  bottom: -1329px;
+position: absolute;
+width: 50%;
+top: 25%;
+left: 25%;
+}
+section:nth-of-type(3) .example svg:nth-of-type(3) {
   position: absolute;
-  left: 80px;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  }
+section:nth-of-type(3) .example svg:nth-of-type(4) {
+  position: absolute;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+
 }

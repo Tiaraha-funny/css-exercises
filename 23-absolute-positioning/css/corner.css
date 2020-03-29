@@ -8,40 +8,40 @@ overflow
 and z-index
 */
 
-section:nth-of-type(1) .example {
-  width: auto;
+section:nth-of-type(1) .container {
+  width: 200px;
   height: 200px;
+  position: relative;
 }
-
 section:nth-of-type(1) .example svg:nth-of-type(1) {
   position: absolute;
   z-index: 0;
-  width: 10%;
-  height: 8%;
-  bottom: -14%;
-  left: 10.5%;
+  width: 25%;
+  height: 25%;
+  bottom: 0%;
+  right: 0%;
 }
 section:nth-of-type(1) .example svg:nth-of-type(2) {
-position: absolute;
-z-index: 0;
-  width: 10%;
-  height: 8%;
-  top: 81.85%;
-  left: -0.75%;
+  position: absolute;
+  z-index: 0;
+  width: 25%;
+  height: 25%;
+  top: 0%;
+  left: 0%;
 }
 section:nth-of-type(1) .example svg:nth-of-type(3) {
-position: absolute;
-z-index: 0;
-width: 10%;
-height: 8%;
-bottom: -14%;
-left: -1%;
+  position: absolute;
+  z-index: 0;
+  width: 25%;
+  height: 25%;
+  bottom: 0%;
+  right: 75%;
 }
 section:nth-of-type(1) .example svg:nth-of-type(4) {
   position: absolute;
-z-index: 0;
-width: 10%;
-height: 10%;
-bottom: 10%;
-left: 10%;
+  z-index: 0;
+  width: 25%;
+  height: 25%;
+  top: 0%;
+  left: 75%;
 }
