@@ -3,20 +3,44 @@
   content: "";
   background-image: url(../css/icon-facebook.png);
   display: inline-block;
-  border-radius: 100%;
-  width: 90px;
-  height: 100px;
-  background-size: 100% 100%;
-  margin-left: -2rem;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -0.75rem;
+  left: 0.75rem;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+}
+.icon {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #888888;
+  color: #ffffff;
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
 }
 .icon_right::after {
   content: "";
   background-image: url(../css/icon-facebook.png);
   display: inline-block;
-  border-radius: 100%;
-  width: 90px;
-  height: 100px;
-  background-size: 100% 100%;
-  margin-left: 0rem;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -0.75rem;
+  right: 0.75rem;
+  top: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+}
+.icon_left {
+  padding-left: 3rem;
 
+}
+.icon_right {
+  padding-right: 3rem;
+}
+a[href="https://facebook.com"] {
+font-weight: bold;
 }
