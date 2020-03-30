@@ -1,40 +1,81 @@
 @charset "UTF-8";
-ol.progress_indicator {
-  counter-reset: step;
+.a11y {
+  display: none;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
-.progress_indicator li {
-  list-style-type: none;
-  width: 25%;
-  float: left;
-  font-size: 12px;
+
+.progress_indicator {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  color: #7d7d7d;
 }
-.progress_indicator li:before {
-  width: 30px;
-  height: 30px;
-  content: counter(step);
-  counter-increment: step;
-  line-height: 30px;
-  border: 2px solid #7d7d7d;
+/*
+back links has an anchor
+Current steps has bold
+future seps has spans
+*/
+.progress_indicator li {
+  counter-increment: step_number;
+}
+
+.progress_indicator li > * {
   display: block;
-  text-align: center;
-  margin: 0 auto 10px auto;
-  border-radius: 50%;
-  background-color: white;
+  padding: 1rem;
+  color: #000;
+  position: relative;
+  padding-inline-start: 3rem;}
+
+.progress_indicator li > *::before {
+content: counter(step_number);
+position: absolute;
+left: 1rem;
+top: 50%;
+height: 2rem;
+width: 2rem;
+margin-top: -0.75rem;
+text-align: center;
+line-height: 2;
+font-size: 1rem;
+border-radius: 50%;
 }
-.progress_indicator li:after {
-  width: 100%;
-  height: 2px;
+
+/*back link*/
+.progress_indicator a {
+text-decoration: none;
+}
+.progress_indicator a::before {
+  background-color: red;
+}
+/*currrent stap*/
+.progress_indicator b {
+
+}
+.progress_indicator b::before {
+  background-color: gold;
+}
+/*future seps*/
+.progress_indicator span {
+opacity: 0.75;
+}
+.progress_indicator span::before {
+background-color: blue;
+color: #fff;
+}
+
+.progress_indicator::after {
   content: '';
+  width: 0.25rem;
   position: absolute;
-  background-color: #7d7d7d;
-  top: 15px;
-  left: -50%;
+  top: 1rem;
+  left: 1.75rem;
+  margin-left: -0.125rem;
+  bottom: 1rem;
+  background-color: #cccccc;
   z-index: -1;
-}
-.progress_indicator li:first-child:after {
-  content: none;
 }
