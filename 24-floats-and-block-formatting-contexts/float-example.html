@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floats</title>
+</head>
+<style>
+/*
+We need to know the following properties:
+What are their default values?
+float:none
+clear:none
+
+What are the possible values for clear?
+left, right, both and none.
+
+What is the rule associated with a floated item in terms of source order?
+- Do not use it with position at the same time.
+- if you want to float, it must be before the element which is floated. (Order source).
+
+Can you float other elements besides images?
+Yes.
+
+Is there a way to create a two-column layout with floats?
+- use pseudo element in a group
+- use the clear for the first group
+- display: table
+- content: "".
+
+BFC (Block formatting context)
+make a methodology. Set of rule for how the contain its containts.
+
+Describe in your own words what BFC is all about.
+BFC is a kind of a new property that is created from display and position which is out of their default values, and it rely on float and clear properties.
+
+We can 'clear' a float by creating a block formatting context on the parent, this is achieved by putting a certain set of properties on the container. What are those properties?
+- Content, layout and paint.
+These are the elements which BFC from:
+- display: inline-block, inline-grid, inline-flex, inline-te=able, table, table-cell, block, table-caption, flex and flow-root.
+- position: absolute or fixed
+- float
+- overflow
+- colomn-span: all
+- colomn-couter: 1
+
+MDN web docs explain it clearly that:
+Block formatting contexts are important for the positioning (see float) and clearing (see clear) of floats. The rules for positioning and clearing of floats apply only to things within the same block formatting context. Floats don't affect the layout of the content inside other block formatting contexts, and clear only clears past floats in the same block formatting context.
+
+Will you forget about Block Formatting Contexts tomorrow?
+Maybe.
+*/
+img {
+  width: 30%;
+  height: 30%;
+  float: left;
+}
+</style>
+<body>
+  <header>
+    <h1>Floats</h1>
+    <img src="peekaboo.png" alt>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quasi fugit reprehenderit nihil quae corporis pariatur eos. Natus, doloremque. Asperiores aperiam optio esse enim quibusdam nisi porro, neque autem maxime? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum minus expedita totam perferendis reiciendis ad ipsum sequi ipsam doloremque officiis odio, velit rerum debitis iure tenetur dolores? Eos, tenetur sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, iusto commodi. Sequi dicta velit porro, id laboriosam mollitia tenetur, provident incidunt ipsam accusamus ea, dolor possimus optio. Ullam, quidem sequi?
+  </header>
+</body>
+</html>
