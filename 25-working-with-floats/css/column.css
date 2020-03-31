@@ -1,0 +1,10 @@
+@charset "ÜTF-8";
+section:nth-of-type(2) .container img[src="images/inspector_gadget.jpg"], img[src="images/doctor_claw.png"] {
+float: left;
+clear: left;
+}
+section:nth-of-type(2) p {
+  clear: right;
+  overflow: hidden;
+  margin-top: 2rem;
+}
