@@ -1,0 +1,27 @@
+section:nth-of-type(4) header > h3 {
+  float: left;
+  margin: 0;
+  margin-block-end: 2rem;
+}
+
+button[value="skip"] {
+text-align: right;
+float: right;
+line-height: 1rem;
+}
+section:nth-of-type(4) .form_row {
+  clear: both;
+  margin-inline-start: 2rem;
+  text-align: center;
+}
+section:nth-of-type(4) label {
+  float: left;
+  width: 9rem;
+  line-height: 2rem;
+  margin-inline-start: 4rem;
+  text-align: right;
+}
+button[value="save"] {
+  margin-inline-start: 1rem;
+  margin-top: 1rem;
+}
