@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+</head>
+<style>
+  /*
+  What is the order of property values in the shorthand flex property?
+  Flex-flow.
+  i.e. Given… flex: 2 1 auto, what does the 2, 1 and auto represent?
+  2, 1 is the grosses of the flex-grow.
+  auto is the default value which does not make a change.
+
+What flex-wrap or flex-flow values do we need before we can use align-content?
+flex-wrap: wrap
+
+How is align-content different to align-items?
+content is container of the acros axis (row)
+items contains the main axis (col)
+
+Which property overrides the other - the container's align-items or the flex item's align-self?
+align-self.
+
+What other commonly-used box model property is similar to flex-basis?
+box-sizing.
+
+There are two ways to change the ordering of flex items within a flex container. One is done on each flex item by using the order property. The other can change the whole order of the flex items at the container level. What is that property or value?
+flex-direction: column
+
+Let's say we wanted some space between each of our three flex items in a flex column. Name at least two possible ways to achieve this.
+flex-self of the content in the middle need to move in another place.
+align-content: space-around
+flex-shrink to give space.
+*/
+body {
+  display: inline-flex;
+  flex-direction: row;
+  flex-basis: 2rem;
+}
+h1 {
+width: 20%;
+border: solid 1px;
+background-color: lightgrey;
+}
+div {
+  border: solid 1px;
+  flex-direction: row;
+}
+header > p {
+    flex-flow: column;
+    display: inline-flex;
+    border: solid 1px;
+    order: 2 4 3 1;
+    align-self: self-end;
+    flex-direction: column;
+    width: 20%;
+    background-color: lightskyblue;
+    justify-content: flex-start;
+}
+p:nth-of-type(1) {
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+p:nth-of-type(3) {
+background-color: lightgreen;
+flex-wrap: wrap;
+align-content: flex-start;
+}
+p:nth-of-type(4) {
+  background-color: khaki;
+}
+</style>
+<body>
+
+  <header>
+    <h1>Flexbox</h1>
+
+  <p> ipsum dolor sit amet consectetur adipisicing elit. Unde error id sed repellat ad praesentium ratione quasi sint asperiores, quis iure saepe adipisci laboriosam delectus omnis voluptatum, natus quas dolores.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur saepe velit eligendi officia quaerat
+  consequuntur, dignissimos ipsum nulla maxime in, eaque doloribus ut explicabo magni sint odio illum impedit!</p>
+
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde tenetur eaque porro nulla. Saepe pariatur aspernatur ducimus dignissimos, aut doloremque distinctio deleniti necessitatibus explicabo ipsa nihil modi corporis odio laborum?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, illum ea? Explicabo itaque enim, libero minima excepturi distinctio, magni dolorem vero dolore perferendis, dolorum facere nisi odit voluptas quas tenetur?</p>
+
+</header>
+</body>
+</html>
