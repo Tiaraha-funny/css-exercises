@@ -1,0 +1,21 @@
+section.flex-row.no-extra-width.no-extra-height div:nth-of-type(2) {
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5;
+  padding-left: -1rem;
+  line-height: 6rem;
+}
+
+section.flex-row.no-extra-width.no-extra-height div.circle {
+  clip-path: circle(37% at 50% 50%);
+  background-color: blue;
+  font-size: 300%;
+  padding-left: -3rem;
+  overflow: visible;
+}
+section.flex-row.no-extra-width.no-extra-height div.pipe {
+  flex: 10rem;
+  display: flex;
+  background-color: red;
+  justify-content: space-evenly;
+}

@@ -1,9 +1,16 @@
 body > header {
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+position: relative;
+z-index: 2;
+flex-wrap: wrap;
 }
 
 body > header h1 {
   margin: 0;
+  margin-inline-start: 2rem;
+  margin-block-start: 1rem;
   font-size: 2rem;
 }
 
