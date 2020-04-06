@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+<style>
+  /*
+  How many columns does a grid have by default?
+  Grid-column by default spans exactly one column.
+
+What are the differences between Flexbox and Grid?
+Flexbox: it is used for placing contents in the column or row. it can handle one-dimensional column or row.Approch content-first.
+Grid: it is used for puting content in a row and column that can be placed wherever you want. It can handle both two-dimensinal column and row.Approch layout-first.
+
+Why would you use flexbox rather than grid?
+Maybe flexbox helps you to place 2 items next to each other.
+
+Why would you use grid rather than flexbox?
+I think grid is more powerful than flexbox and it is more supported by the browser.
+Also we can use it for both column and row used together at on time.
+
+What's a more concise way to write out the following: grid-template-columns: 10rem 10rem 10rem 10rem;
+Grid-template-column: grid-column-start 10px or %, grid-row-start 10px or %, grid-column-end 10px or %, grid-column-end 10px or %.
+
+How can we specify a minimum height for a grid row, but still allow the row to increase in height if its content is too tall?
+
+  */
+  #container {
+  display: grid;
+  grid: repeat(3, 60px) / auto-flow 80px;
+}
+
+#container > div {
+  background-color: hotpink;
+  width: 80%;
+  height: 80%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#container > div:nth-of-type(3) {
+  background-color: lawngreen;
+  grid-row-start: 1/2;
+}
+header:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+}
+#container > div:last-of-type {
+  background-color: purple;
+  grid-column: span 2;
+  grid-row: 1;
+  color: skyblue;
+}
+p {
+  background-color: lightcyan;
+  flex-flow: row;
+  width: 20%;
+  border: solid 1px;
+  justify-content: space-around;
+}
+</style>
+<body>
+  <header>
+    <h1>Grid</h1>
+    <div id="container">
+      <div>I love milk</div>
+      <div>I love milk</div>
+      <div>I love milk</div>
+      <div>I love milk</div>
+      <div>I love milk</div>
+      <div>I love milk</div>
+      <div>I love milk</div>
+      <div>I love milk</div>
+    </div>
+  </header>
+  <header>
+    <h1>Flexbox</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, nesciunt pariatur sapiente quos ab, voluptate dolorum soluta eum sint accusamus nemo placeat nulla cumque ratione officiis quas deserunt neque. Reprehenderit!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet quaerat excepturi officia rerum accusamus ab fugiat quas accusantium, ullam laboriosam distinctio, aliquid et, autem ex ut molestias veniam culpa?</p>
+  </header>
+</body>
+</html>
