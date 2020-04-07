@@ -9,9 +9,11 @@ html {
 
 body {
   font-size: 100%;
-  margin: 0;
+  margin-block-start: 30px;
+  margin-block-end: 20px;
   margin-inline-start: 45px;
-  max-width: 960px;
+  margin-inline-end: 45px;
+  max-width: 945px;
 }
 body > header {
   display: grid;
@@ -35,7 +37,7 @@ img {
   grid-column: 6;
 }
 
-main > header {
+.a11y {
   position: absolute;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
@@ -49,4 +51,14 @@ main > header {
 nav > ul > li {
   grid-column: 6;
   display: grid;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+abbr {
+  text-decoration: none;
 }
