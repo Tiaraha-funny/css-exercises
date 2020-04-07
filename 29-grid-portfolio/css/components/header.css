@@ -1,11 +1,14 @@
 body > header {
-
+  grid-template-columns: repeat(6, 145px);
+  display: grid;
+  column-gap: 15px;
+  row-gap: 30px;
+  align-items: end;
 }
 
 body > header h1 {
   border-block-end: 1px solid #4d4d4d;
 }
-
 body > header a {
   display: block;
   color: #ccc;
@@ -18,9 +21,17 @@ body > header a:hover {
   color: #fff18f;
   font-weight: 700;
 }
-
-body > header nav {
+body > header > nav {
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+body > header ul {
   font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 145px);
+  column-gap: 15px;
+  row-gap: 30px;
+
 }
 
 body > header h1 {

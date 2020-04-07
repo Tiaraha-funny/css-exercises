@@ -10,7 +10,7 @@
   row-gap: 45px;
   column-gap: 15px;
   display: grid;
-  grid-template-columns: repeat(6, 150px);
+  grid-template-columns: repeat(6, 145px);
 }
 
 /*
