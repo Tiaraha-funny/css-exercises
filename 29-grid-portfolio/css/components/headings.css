@@ -1,9 +1,11 @@
 .heading_page {
   font-size: 1.5rem;
   font-weight: 400;
+  display: grid;
 }
 
 .heading_important {
+  grid-column: 2 / 5;
   font-size: 2rem;
   font-weight: 700;
   color: #ccc;

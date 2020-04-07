@@ -3,6 +3,7 @@ body > footer {
   font-size: 0.75rem;
   border-block-start: 1px solid #4d4d4d;
   padding-block-start: 0.75rem;
+  display: grid;
 }
 
 body > footer p {
@@ -19,7 +20,8 @@ body > footer a:hover {
 }
 
 body > footer p:last-child {
-
+  grid-column-end: 7;
+  grid-column: 145;
 }
 
 body > footer p:last-child a {
