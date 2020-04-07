@@ -1,0 +1,8 @@
+@charset "UTF-8";
+nav > ul > li {
+  display: grid;
+}
+li {
+  grid-row: 1;
+  background-color: red;
+}
