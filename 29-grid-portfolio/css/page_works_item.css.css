@@ -1,0 +1,37 @@
+html {
+  background-color: lightsalmon;
+  display: grid;
+}
+body > header {
+  grid-template-columns: repeat(5, 145px);
+  display: grid;
+  column-gap: 15px;
+  row-gap: 30px;
+  align-items: end;
+}
+header > h1 {
+  display: inline-grid;
+  grid-column: 1 / 6;
+  text-decoration: none;
+}
+nav {
+  background-position: top;
+  background-image: url(../images/141-145x145.jpg);
+  background-repeat: no-repeat;
+  padding: 20rem;
+  padding-bottom: 0;
+}
+header > nav ul {
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-column: 1 / 6;
+display: grid;
+column-gap: 50px;
+margin: 0;
+margin-left: -10rem;
+color: whitesmoke;
+font-style: oblique;
+font-size: 2rem;
+list-style-type: none;
+text-decoration: none;
+list-style: none;
+}

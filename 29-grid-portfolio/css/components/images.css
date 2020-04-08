@@ -1,7 +1,10 @@
 .image_full {
-
+display: grid;
 }
 
 .image_half {
-
+  width: calc((3 * 145px) + (5 * 15px));
+  background-color: var(--main-bg-color);
+  color: var(--main-txt-color);
+  padding: var(--main-padding);
 }

@@ -48,4 +48,5 @@ body > header li {
   border-block-end: 1px solid #4d4d4d;
 }
 img {
+  width: calc((3 * 145px) + (5 * 15px));
 }

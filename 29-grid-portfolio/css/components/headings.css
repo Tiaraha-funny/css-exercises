@@ -2,6 +2,7 @@
   font-size: 1.5rem;
   font-weight: 400;
   display: grid;
+  margin-top: 0.5rem;
 }
 
 .heading_important {

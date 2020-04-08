@@ -3,12 +3,15 @@ column-gap: 30px;
 grid-template-columns: 3fr 7fr 10fr;
 grid-template-rows: 1fr 1fr;
 padding-block-start: 1rem;
+align-items: start;
 }
 .about img {
   grid-column-start: 2;
   grid-column-end: 3;
+  margin-top: 1rem;
 }
 .about div.about_description {
   grid-column-start: 3;
   grid-column-end: 5;
+  margin-top: -0.5rem;
 }
