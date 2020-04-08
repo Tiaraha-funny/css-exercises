@@ -7,7 +7,13 @@ row-gap: 30px;
 }
 main header{
   display: grid;
-  grid-template-columns: repeat(6, 145px);
+  grid-template-columns: repeat(2, 145px);
+  column-gap: 15px;
+  row-gap: 30px;
+}
+main article {
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
 }
 .post a {
   color: #f2f2f2;
@@ -73,4 +79,7 @@ grid-area: content;
 }
 p {
   margin: 0;
+}
+.post > header > h3 {
+  grid-column: 1 / 6;
 }

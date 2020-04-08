@@ -22,6 +22,8 @@ align-items: start;
   margin: 0;
   padding: 0;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: inline-grid;
+  margin-inline-start: -1rem;
 }
 
 .works_item_navigation a {
