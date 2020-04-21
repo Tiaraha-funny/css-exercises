@@ -3,6 +3,29 @@
 #c_and_i .row a + a + a         { background-color: hsla(200deg, 100%, 50%, 0.3);}
 #c_and_i .row a + a + a + a     { background-color: hsla(200deg, 100%, 50%, 0.4);}
 #c_and_i .row a + a + a + a + a { background-color: hsla(200deg, 100%, 50%, 0.5);}
+
+:root {
+ --backgroud-color: hsla(36deg, 100%, 50%, 0.1);
+}
+.row:nth-of-type(1) {
+  --hue-multiplier: calc(var(--));
+}
+.row:nth-of-type(10) {
+  --hue-multiplier: 10;
+}
+.row a:nth-of-type(1) {
+  --opacity-multiplier: 1;
+}
+
+a {
+  background-color: var(--color);
+  --opacity-multiplier: hsla(360deg, 100%, 50%, 1.0);
+}
+.row {
+  background-color: var(--color);
+  --hue-multiplier: hsla(36deg, 100%, 50%, 0.1);
+}
+
 /*
   … etc …
 

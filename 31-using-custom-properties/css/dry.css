@@ -1,4 +1,12 @@
-
+:root {
+  --cell-color: rgb(63, 63, 63);
+  --height: 20px;
+  --width: calc(var(--height) * 10px);
+  --transition: background-color 1s;
+  --font-size: 10px;
+  --top: 0;
+  --counter-item: item;
+}
 
 #dry .grid {
   display: inline-grid;
@@ -8,33 +16,31 @@
 #dry a {
   display: block;
   position: relative;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(63, 63, 63);
-  transition: background-color 1s;
-  counter-increment: item;
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--cell-color);
+  transition: var(--transition);
+  counter-increment: var(--counter-item);
 }
 
 #dry a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--cell-color);
 }
 
 #dry a::before {
-  content: counter(item);
+  content: counter(var(--counter-item));
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
+  top: var(--top);
+  left: var(--top);
+  width: var(--width);
   text-align: center;
-  font-size: 10px;
-  line-height: 20px;
+  font-size: var(--font-size);
+  line-height: var(--width);
   font-weight: 700;
-  color: rgb(63, 63, 63);
-  transition: color 1s;
+  color: var(--cell-color);
+  transition: var(--transition);
 }
 
 #dry a:hover::before {
   color: rgb(255, 255, 255);
 }
-
-

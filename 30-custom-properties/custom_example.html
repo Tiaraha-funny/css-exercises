@@ -7,44 +7,80 @@
 </head>
 <style>
   /*
- 1) What characters do we have to use when defining a Custom Property's name? Name, Type, Value.
+
+    :root {
+      --columns: 2;
+      --cell-color: red;
+      --base-unit: calc(var(--columns) / 2 * 1rem);
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(var(--columns), 1fr);
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      gap: var(--base-unit);
+      font-size: var(--base-unit);
+      line-height: 3;
+    }
+    li {
+      background-color: var(--cell-color);
+    }
+    @media (min-width: 640px) {
+      :root {
+        columns: 4;
+      }
+    }
+    @media (min-width: 1024px) {
+      :root {
+        columns: 6;
+      }
+    }
+  </style>
+
+  1) What characters do we have to use when defining a Custom Property's name? Name, Type, Value.
  we need ":root" element followed by name and value.
  We need to use double dash in the front of the name and use dash instead of space.
 ex: --base-units: 3px;
 
  2) What characters can't we use in a Custom Property name?
  we can not use space in between.
+ Periode and dot.
 ex: --base unit: 3px;
 
  3) What possible values can we assign to a new Custom Property?
   we can use "calc" and units as values: px, rem, em... to assign a new custom property.
+  Text by using quote, braket, number, color, secondes.
 
  4) When is it useful to create Custom Properties using the :root or html selector?
- It is useful when we want to make the all elements in Html inherit.
+ It is useful when we want to make the all elements in Html inherit property.
  When is it not? Hint: scope
+ When you want to change the diffent values.
  It is not useful when we spacify the element by using pseudo-element. We cannot have a globbal variable that declares a custom property outside of a selector.
 
  5) After we've defined a new Custom Property, how can we recall or use that Custom Property?
+ --apple: red
+ var(--apple)
  To recall the custom property we can use that property and place that inside the braket by using var or const.
  What function do we use?
  We need to use "var" function.
 
  6) There are several ways to override or change a Custom Property. Can you name at least 3?
  We override it by spacifying or using: Pseudo.element.
-- :nth-of-type
-- hover
-- pseudo-class
+ Change the selector and change the value.
+ We can use @ media query.
 
  7) Why are Custom Properties useful?
  It is useful because it avoids repeatation and make the code dry.
+ write less code.
+ One point of control, to press only one button instead of 5 or so button.
 
  8) What is the only aspect (or part) of CSS syntax that we can use Custom Properties for?
- The css layout: columns, table, float, flexbox, font, inline and positioning.
- Pseudo-class ":root".
+ Decoration blog. It is a value pair.
   */
   :root {
     --base-unit: 50px;
-    --colums: 5 / 3;
+    --colums: 5;
     --color: lightblue;
   }
   div {
