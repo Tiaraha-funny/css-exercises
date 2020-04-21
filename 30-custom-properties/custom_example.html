@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Costum properties</title>
+</head>
+<style>
+  /*
+ 1) What characters do we have to use when defining a Custom Property's name? Name, Type, Value.
+ we need ":root" element followed by name and value.
+ We need to use double dash in the front of the name and use dash instead of space.
+ex: --base-units: 3px;
+
+ 2) What characters can't we use in a Custom Property name?
+ we can not use space in between.
+ex: --base unit: 3px;
+
+ 3) What possible values can we assign to a new Custom Property?
+  we can use "calc" and units as values: px, rem, em... to assign a new custom property.
+
+ 4) When is it useful to create Custom Properties using the :root or html selector?
+ It is useful when we want to make the all elements in Html inherit.
+ When is it not? Hint: scope
+ It is not useful when we spacify the element by using pseudo-element. We cannot have a globbal variable that declares a custom property outside of a selector.
+
+ 5) After we've defined a new Custom Property, how can we recall or use that Custom Property?
+ To recall the custom property we can use that property and place that inside the braket by using var or const.
+ What function do we use?
+ We need to use "var" function.
+
+ 6) There are several ways to override or change a Custom Property. Can you name at least 3?
+ We override it by spacifying or using: Pseudo.element.
+- :nth-of-type
+- hover
+- pseudo-class
+
+ 7) Why are Custom Properties useful?
+ It is useful because it avoids repeatation and make the code dry.
+
+ 8) What is the only aspect (or part) of CSS syntax that we can use Custom Properties for?
+ The css layout: columns, table, float, flexbox, font, inline and positioning.
+ Pseudo-class ":root".
+  */
+  :root {
+    --base-unit: 50px;
+    --colums: 5 / 3;
+    --color: lightblue;
+  }
+  div {
+    padding: 1rem;
+    background-color: var(--color);
+  }
+</style>
+<body>
+  <header>
+ <h1>
+   Custom Property
+ </h1>
+ <div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat pariatur numquam delectus incidunt?</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat pariatur numquam delectus incidunt?</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat pariatur numquam delectus incidunt?</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat pariatur numquam delectus incidunt?</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat pariatur numquam delectus incidunt?</p>
+ </div>
+  </header>
+</body>
+</html>
