@@ -1,3 +1,22 @@
 .container blockquote {
-  width: 100%;
+  width: calc(100% - 2 * ((2 * 1rem) + 4rem));
+  box-sizing: border-box;
+/*  width: calc(100% - 2 is a spacing amout * ((2 is a blockquot padding * 1rem) + 4rem is the width of the emojie));
+
+   /-------------------------------------------------------\
+   |
+   |
+   |  /  \               /-----------------\           /  \
+   |  |  |
+   |  |  |
+   |  |  |
+   |  |  |
+   |  |  |
+   |  \  /               \------------------/          \  /
+   |
+   /---------------------------------------------------------/
+*/
+}
+:root {
+  --blockquote: 100%;
 }
