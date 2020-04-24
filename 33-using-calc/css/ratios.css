@@ -1,20 +1,30 @@
+:root{
+--conversion-rate: 100%;
+}
+.ratio {
+  padding-block-start: calc(var(--height) / var(--width) * var(--conversion-rate));
+}
 
 #ratio_2_1 {
-  padding-block-start: calc((400 / 800) * 100%);
+  --width: 800;
+  --height: 400;
   /*50%*/
 }
 
 #ratio_16_9 {
-  padding-block-start: calc((450 / 800) * 100%);
+  --width: 800;
+  --height: 450;
   /* 56.25%)*/
 }
 
 #ratio_4_3 {
-  padding-block-start: calc((600 / 800) * 100%);
+  --width: 800;
+  --height: 600;
   /*75%*/
 }
 
 #ratio_1_1 {
-  padding-block-start: calc((800 / 800) * 100%);
-  /*100%*/
+  --width: 800;
+  --height: 800;
+    /*100%*/
 }
