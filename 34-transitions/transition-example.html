@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+</head>
+<style>
+/*
+1) The first state is the initial state, or how the element was to begin with.
+2) The second state, or target state, is what the element will become.
+*/
+
+
+div {
+  transition-duration: 4s;
+  transition-delay: 2s;
+  transition: all 2s;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  transition: background-color 1s;
+  padding: 3rem;
+  background-color: chartreuse;
+  box-sizing: border-box;
+  text-align: center;
+}
+div:hover {
+  transform: scale(0.9);
+  width: 50px;
+  background-color: cyan;
+}
+
+</style>
+<body>
+  <div>
+    milk and banana
+  </div>
+</body>
+</html>
