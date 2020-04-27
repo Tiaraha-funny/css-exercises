@@ -17,7 +17,7 @@ transition-timing-function
 
 2) What is the difference between a timing function, delay, and duration?
 The difference between them are:
-Timing funtion: the step of the changing. Timing functions determine how intermediate values of the transition are calculated.
+Timing funtion: the step of the changing. Timing functions determine how intermediate values of the transition are calculated. by default ease.
 Delay: defines the time of waiting and starting to change.
 Duration: defines how long the duration of the changes is.
 
@@ -61,21 +61,29 @@ word-spacing
 z-index
 
 4) Can we select more than one property to transition at a time? If so, how?
-I think yes, by using "all" value
+I think yes, by using comma separated, dash, "all" value.
 
 5) How can we set or define the desired transition state, using CSS?
+Class, Selecter, Pseudo-element like:
+hover
+active do an action when you move your  mouse,
+focus using highlighted.
+target
+checkboxe
 
 6) Do we need transitions? What makes them useful?
 Yes we need it sometimes because it is useful for the proccess of where it comes from or where it is gone, and also making decoraton on smoothing out the color or the size, including animation.
 
 7) At what point can transitions become a problem?
-When we don't want to change the image or the content.
+When you are in a rush.
 
 8) Transitions don't work reliably with the auto keyword being one of the end states. Why is that?
-Because that is the default value of tansition.
+because the browser calculate it all the time.
+We can't transition of something that don't have number.
 
 9) How can we stagger transitions? i.e. make a number of child elements all start at different times?
 The way to stagger the transition, make their velues different time or duration by using
+transition-delay
 ease
 linear
 ease-in
