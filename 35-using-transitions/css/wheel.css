@@ -21,6 +21,9 @@
 */
 .scene:hover .wheel {
   left: 100%;
+  transition: 2s;
+  transition-delay: 0s;
+  transform: rotate(360deg);
 }
 
 /* Wheel setup */
