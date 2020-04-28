@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+button {
+  background-color: rgba(0, 0, 255, 0.5);
+  transition-property: background-color;
+  transition-duration: 1s;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  border-inline-start: 0.125rem solid rgba( 50, 50, 255);
+  border-inline-end: 0.125rem solid rgba( 0, 0, 255);
+  border-block-start: 0.125rem solid rgba( 255, 0, 255);
+  transition-duration: 0.3s;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+font-size: 2rem;
+}
+button:hover, button:focus {
+  transform: scale(1s);
+background-color: rgba( 0, 255, 0, 0.5);
+}
+button:active {
+  border-inline-start: 10px;
+  border-inline-end: 10px;
+  border-block-start: 10px;
+  border-width: 1rem;
+  left: 1px;
+  right: 0;
+}
+</style>
+<body>
+  <button>
+    Log-in
+  </button>
+</body>
+</html>
