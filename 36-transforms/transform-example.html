@@ -17,15 +17,20 @@ We have to use separate function because rotate can override the scale function.
 Moving the central pin we can use transform-origin, or translate().
 
 4) Why is it preferable to use transform: translate() rather than position and its associated properties?
-It is preferable because the translate() applies toss
+It is preferable because the translate() applies to the content areas but the position applies to the whole content.
 
 6) What problems can you run in to when overriding a transform in a more specific selector?
-When overriding a transform in a more specific selector, the problems are from the full property uses like transition-property instead of only trasition.
+Using pseudo-call is overriding the basse selector because it is more specific, and it applies the default value of the proprty.
 
-7) If we want to go 3D, we need to use another property to set the view over the scene. What is that property?
-I think we need to use transform rotateX, -Y and -Z.
+7) If we want to go 3D, we need to use another property to set the view over the scene. What is that property? perspective.
 
 8) We can control what the transform uses in its calculations in terms of the box model. What property can we use to adjust this?
+To adjust this calculation we need to use transform-box property.
+- content-box
+- border-box by the default.
+- padding-box
+- view-box
+In term of the box model we use box-sizing and when we use transform, it needs scale uses to resize it.
 */
 div {
   width: 80px;
@@ -35,21 +40,21 @@ div {
   font-weight: bold;
   font-size: 30px;
   padding: 10px;
-  margin-right: 50px;
   border-radius: 5px;
   border: 1px solid #000000;
   background: red;
   margin: 10px;
+  transform-style: preserve-3d;
 }
 div::before {
   content: '3D';
 }
 div:hover {
   transform: rotateX(180deg);
-}
+  transform-style: preserve-3d;
+  }
 </style>
 <body>
   <div id="rotate"></div>
 </body>
 </html>
-ghf
