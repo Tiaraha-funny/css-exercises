@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform</title>
+</head>
+<style>
+  /*
+1) Name the functions we can use in a transform's value?
+It can be everything in the brackets, we can use deg and turn in atransform.
+
+2) Why do we have to use separate functions, in order, and as values, e.g. transform: scale(0.5) rotate(45deg); when we could have had separate properties like: transform-scale: 0.5;, or transform-rotate: 45deg?
+We have to use separate function because rotate can override the scale function.
+
+3) Often, we want to move the central pin or axis of the transform away from its default position. What property do we use to set that?
+Moving the central pin we can use transform-origin, or translate().
+
+4) Why is it preferable to use transform: translate() rather than position and its associated properties?
+It is preferable because the translate() applies toss
+
+6) What problems can you run in to when overriding a transform in a more specific selector?
+When overriding a transform in a more specific selector, the problems are from the full property uses like transition-property instead of only trasition.
+
+7) If we want to go 3D, we need to use another property to set the view over the scene. What is that property?
+I think we need to use transform rotateX, -Y and -Z.
+
+8) We can control what the transform uses in its calculations in terms of the box model. What property can we use to adjust this?
+*/
+div {
+  width: 80px;
+  height: 70px;
+  color: white;
+  position: relative;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+  margin-right: 50px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background: red;
+  margin: 10px;
+}
+div::before {
+  content: '3D';
+}
+div:hover {
+  transform: rotateX(180deg);
+}
+</style>
+<body>
+  <div id="rotate"></div>
+</body>
+</html>
+ghf
