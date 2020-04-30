@@ -69,17 +69,20 @@
 }
 
 .scene:hover #solar-system {
-
+transform-style: preserve-3d;
 }
 
 .scene:hover #earth-system {
-
+  transform-style: preserve-3d;
+  transform: rotateX(75deg);
 }
 
 .scene:hover #earth {
-
+  transform-style: preserve-3d;
+  transform: rotateX(75deg);
 }
 
 .scene:hover #luna {
-
+  transform-style: preserve-3d;
+  transform: rotateX(75deg);
 }
