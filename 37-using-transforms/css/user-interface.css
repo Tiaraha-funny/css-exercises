@@ -61,4 +61,5 @@
 
 .user-interface :checked ~ nav {
   transform: translateX(200px);
+  transform: scale(0);
 }
