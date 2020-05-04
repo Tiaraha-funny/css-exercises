@@ -1,3 +1,7 @@
+
+/* We learn transform to make the position in agood order
+we use the perspective in 3d to zoom the camera. */
+
 :root {
   --white-rgb: 255, 255, 255;
   --black-rgb: 0, 0, 0;
