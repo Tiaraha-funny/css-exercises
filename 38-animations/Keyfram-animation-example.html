@@ -8,30 +8,102 @@
 <style>
   /*
   Keyframe Animation setup needs some unique code, what does it start with?
-  It starts with "@".
+  It starts with "@keyframes".
 
 What makes the keyframes code different to the rest of CSS?
+ The keyframes can't have query and the name.
 It is defferent because it is specify the limite of everything that you want to limite.
+To make infinite animation.
 
 How do we use a keyframe animation we set up earlier as a property in a ruleset for an element?
-We use a keyframe animation using percentages and we have to call it in its element.
+Animation-name and animation-duration by default 0. We have to call it in its element.
 
 Keyframe animations have other keywords that aren't available in transitions, what are these keywords?
+reverse, infinite that how to make it loop, play states, pause, runing.
 
 How many properties can we animate at once?
+We can animate many properties at once.
+
 What properties are animatable?
+All the properties which is animated by transition are animatable in keyfram animation
+background -color -position -size
+border -bottom -bottom-color -bottom-left-radius -bottom-right-radius -bottom-width -color -left -left-color -left-width -right -right-color -right-width -spacing -top -top-color -top-left-radius -top-right-radius -top-width
+bottom
+box-shadow
+clip
+color
+column-count -gap -rule -rule-color -rule-width -width
+columns
+filter
+flex -basis -grow -shrink
+font -size -size-adjust -stretch -weight
+grid -area -auto-columns -auto-flow -auto-rows
+grid-column -end -gap -start
+grid-gap -row -row-end -row-gap -row-start
+grid-template -areas -columns -rows
+height
+left
+letter-spacing
+line-height
+all margin
+max-height -width
+min-height -width
+object-position
+opacity
+order
+outline -color -offset -width
+all padding
+perspective -origin
+right
+text-decoration-color -indent -shadow
+top
+transform -origin
+vertical-align
+visibility
+width
+word-spacing
+z-index
   */
+  @keyframes example {
+  0%   {background-color:peru;}
+  25%  {background-color:yellow; left: 50rem; top: 10rem;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
+}
+@keyframes paragraphe {
+  10%   {background-color:peru;}
+  25%  {background-color:yellow; right: 50rem; top: 10rem;}
+  60%  {background-color:blue;}
+  80%  {background-color:green;}
+  100% {background-color:red;}
+}
+
+p {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 20%;
+  background-color: red;
+  animation-name: paragraphe;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 10rem;
+}
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 20%;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
 </style>
 <body>
   <h1>Keyframe Animation</h1>
-  <div>
-    Keyframe Animation setup needs some unique code which is "@".
-
-What makes the keyframes code different to the rest of CSS?
-How do we use a keyframe animation we set up earlier as a property in a ruleset for an element?
-Keyframe animations have other keywords that aren't available in transitions, what are these keywords?
-How many properties can we animate at once?
-What properties are animatable?
-  </div>
+  <div></div>
+  <p></p>
 </body>
 </html>
