@@ -2,6 +2,16 @@
   --ball-diameter: 100px;
 }
 
+@keyframes bounce {
+  0% {
+    opacity: 0;
+     top: 0;
+}
+  100% {
+    opacity: 100;
+    top: 80%;}
+}
+
 #court {
   border-block-end: peru solid 20px;
   position: relative;
@@ -22,5 +32,7 @@
   background-position:
     50% -25px,
     50% 50%;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
+  animation-name: bounce;
+  animation: 5s linear alternate-reverse infinite bounce;
 }
