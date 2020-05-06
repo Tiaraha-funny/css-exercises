@@ -13,6 +13,8 @@
   --middle-z-index: 10;
 }
 
+
+
 .paper {
   --paper-width: 60%;
   position: absolute;
@@ -88,6 +90,8 @@
   height: 200px;
   width: 370px;
   z-index: calc(var(--middle-z-index) + 1);
+  animation-name: cut;
+  animation: 2s linear alternate-reverse infinite cut;
 }
 
 #scissors-pivot {

@@ -3,13 +3,10 @@
 }
 
 @keyframes bounce {
-  0% {
-    opacity: 0;
-     top: 0;
-}
-  100% {
-    opacity: 100;
-    top: 80%;}
+0% {top: 0; transform: translateY(0px);}
+20% { transform: translateY(100px); transform: scale(1.5, 1.5)}
+50% { transform: translateY(155px); transform: scale(1.5, 1)}
+100% { top: 85%; transform: translateX(200px); transform: scale(2, 0.5)}
 }
 
 #court {
@@ -34,5 +31,5 @@
     50% 50%;
   background-repeat: no-repeat;
   animation-name: bounce;
-  animation: 5s linear alternate-reverse infinite bounce;
+  animation: 2s linear alternate-reverse infinite bounce;
 }
