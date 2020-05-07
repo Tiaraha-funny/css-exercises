@@ -31,5 +31,5 @@
     50% 50%;
   background-repeat: no-repeat;
   animation-name: bounce;
-  animation: 2s linear alternate-reverse infinite bounce;
+  animation: 2s linear infinite bounce;
 }

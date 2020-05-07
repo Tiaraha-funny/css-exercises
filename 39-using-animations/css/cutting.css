@@ -83,6 +83,11 @@
   perspective: 1000px;
 }
 
+@keyframes cut {
+  0% {right: 0;}
+  100% { left: 100%;}
+  }
+
 #scissors {
   position: absolute;
   top: 85px;
@@ -91,8 +96,9 @@
   width: 370px;
   z-index: calc(var(--middle-z-index) + 1);
   animation-name: cut;
-  animation: 2s linear alternate-reverse infinite cut;
+  animation: 6s linear cut;
 }
+
 
 #scissors-pivot {
   --negative-pivot-radius: calc(var(--pivot-diameter) / -2);
@@ -106,6 +112,23 @@
   margin-inline-start: var(--negative-pivot-radius);
   z-index: 10;
   background-color: rgba(0,0,0,.5);
+  animation-duration: 1s;
+}
+
+@keyframes up {
+  0% { transform: rotate(0);
+  }
+  15% {
+    transform: rotateX(10deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotateZ(40deg);
+  }
+  100% {
+  }
 }
 
 #scissors-top {
@@ -114,6 +137,11 @@
   left: 0;
   transform-origin: calc(var(--pivot-x) + 3px) 73%;
   transform: rotate(-15deg);
+  animation-name: up;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 #blade-top {
@@ -135,13 +163,36 @@
   margin-block-start: calc(var(--handle-connect-thickness) / -2);
 }
 
+@keyframes down {
+  0% { transform: rotate(0);
+  }
+  15% {
+    transform: rotateX(-10deg);
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotateZ(-40deg);
+  }
+  100% {
+  }
+}
+
 #scissors-bottom {
   position: absolute;
   top: 91px;
   left: 0;
   transform-origin: calc(var(--pivot-x) + 3px) 27%;
   transform: rotate(15deg);
+  animation: translate3d(20px 50px) infinite;
+  animation-name: down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
+
 
 #blade-bottom {
   top: 0;
@@ -164,12 +215,29 @@
   margin-block-end: calc(var(--handle-connect-thickness) / -2);
 }
 
+@keyframes paper{
+0% {top: -2%; transform: rotate(20deg);animation-delay: 1s;}
+10% {transform: rotate(23deg);animation-delay: 1.1s;}
+20% {transform: rotate(25deg);animation-delay: 1.3s;}
+30% {transform: rotate(28deg);animation-delay: 1.5s;}
+40% {transform: rotate(30deg);animation-delay: 1.7s;}
+50% { top: -1%; transform: rotate(2deg) 2s; animation-delay: 2s;}
+60% {transform: rotate(5deg);animation-delay: 2.1s;}
+70% {transform: rotate(7deg);animation-delay: 2.3s;}
+80% {transform: rotate(9deg);animation-delay: 2.5s;}
+90% {transform: rotate(10deg);animation-delay: 2.7s;}
+100% { top: -0%; transform: rotate(12deg) 3s; animation-delay: 3s;}
+}
 #paper-cut {
   top: 49px;
   height: 150px;
   z-index: calc(var(--middle-z-index) - 1);
   transform-origin: 50% 100%;
   transform: translateZ(100px) rotateX(15deg);
+  animation-name: paper;
+  animation: 3s paper;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out 2s;
 }
 
 #paper-uncut {
