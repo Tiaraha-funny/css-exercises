@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*
+1) `box-shadow` and `text-shadow` have very similar value syntax. Where do they differ?
+They reffer to the
+
+2) If I wanted to create a hard-edge shadow, one that looks like a solid border, what combination of values would I need to use?
+
+3) Is it possible to create a shadow on a circular element? What about a polygon?
+Yes it is possible to use a shadow on a circle but we can use it with polygon or clip-path.
+Use border-radus instead.
+
+4) Is it possible to create multiple shadows on the same element?
+Yes!
+We can use multi-shadow by using double value separated by commat.
+    */
+    h1 {
+  color: lightskyblue;
+  text-shadow: 2px 10px 10px #000000;
+  font-style: oblique;
+  font-size: 5rem;
+}
+div {
+  background-color: magenta;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px 10px #888888;
+  transform: translate(150%, 40%);
+}
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <h1> A Shadow </h1>
+  </div>
+</header>
+</body>
+</html>
