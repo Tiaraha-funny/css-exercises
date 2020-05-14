@@ -14,8 +14,15 @@
 WOFF because it has success of many browsers(all the browsers support it).
 
 3) The font-face syntax is also different to other @-blocks. What are the differences between a @font-face block and @keyframes / @media queries / @supports blocks, etc.
+- we don't give a name
+- don't need source
+- don't specify the start and end
+- It is only used fonts properties
 - It has its own suppportive browser.
 - It works on the text.
+- You can imput your own fonts to make it unique and you can bold it as much as you want.
+- It has benefits on styling words.
+- It loads costm web fonts is a great feature to our site a unique and memorable aesthetic.
 
 4) Some fonts come with licencing restrictions. What does this mean?
 It means, you need to buy it and downlowd because your hardrive doesn't have it.
@@ -27,25 +34,37 @@ font-family 	  font-weights    	  italic?
 'Proxima Nova'	100, 300, 600, 800	    No
 
 How many font-face blocks do we need to provide if we want to support all the chosen fonts?
-To support all the choosen fonts, we need to provide all of the fonts which we choose and we have to create one each font-face each, so it depends on how many you choose.
+8 fonts: 1 for 400, 1 for both 400, 1 for 700, 1 for both 700, like that also with the "proxima nova".
+To support all the choosen fonts, we need to provide all of the fonts which we choose and we have to create one each fonts by using "format(WOFF...)", so it depends on how many you want to support.
 
-6) At roughly 20KB per font file, how many kilobytes of fonts would each of our users have to download in the example above? It is 16kb at least and 170kb at most.
+6) At roughly 20KB per font file, how many kilobytes of fonts would each of our users have to download in the example above? It is 160kb from the q^ 5 but in general 16kb at least and 170kb at most everyone of them.
 
 7) If we choose to offer WOFF2 as well as WOFF, what syntax would we use?
-@support-blocks.
-If we chose to offer WOFF2 we would use Chrome or websit.
+@font-face: local() url() format(woff2) for each charracters.
+If we chose to offer WOFF2 we would use it at first.
 
 How many files would we have, according to question 5?
-I think it would be 1file but has two @font-face(s).
+I think it would have 16files. It means 8 + 8 = 16 as the explanation above mention but it is two each.
 
 8) Most of our users would probably have the exact font we want to serve already installed on their devices. How can we make sure the user's browser doesn't download the fonts they might already have?
+We use Local() functon.
 
 9) Sometimes we have to assign fallback fonts for our custom webfonts we add via `@font-face`. What are some things to keep in mind when it comes to selecting these fallback fonts?
+We need to choose the charracters which are quite similar with "sans-serif".
 
 10) The browser can use one of several strategies for loading the fonts, e.g. showing nothing until the font is downloaded, or using a fallback font first. What property can we use to help the browser decide on which strategy to use?
-We can use (Url and local) properties.
-We have to choose the supportive syntax, like WOFF because all the browsers support it.
+Font-display suggest us to choose the strategies:
+1- Fallback
+ - Swap
+ - Optional
+  2 - Renders
+    - Fallback
+    - Font
+  3 - Blank
+    - untill doanloaded
 
+We can use (Url() and local()) properties together.
+We have to choose the supportive syntax, like WOFF because all the browsers support it.
   */
 </style>
 <body>
