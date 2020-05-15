@@ -20,17 +20,35 @@ Values:- General:- auto: determined the cursor to display
       - Rizing and srolling
       - Zooming: zoom-in and out.
 Question: Why exactely do we still use url and calculate the (x,y)?
+We use (x,y) for the image that we want to point in Url.
 
 1-2 - pointer-events
+Pointer is used for SVG or an image.
 
-outline
-filter
-appearance
-object-fit
-scroll-snap-align
+1- 3 - outline
+Outline is always used for making style. There are outlin-width, outline-color, outline-style.
+It can make a style of the border.
+
+1- 4 - filter
+Filter makes an effect on color and make a blur of an image. It causes the work of background,border and image.
+
+1- 5 appearance
+Apperance is based on operating system.
+It has two charracteres:
+-moz-appearrance for supported by firefox.
+-webkit-appearance for : webKit-based: Safari and blink-based: chrome and Opera.
+
+1- 6 object-fit
+Object-fit sets the content to fit the box which resizes the image or video.
+Followed by these values: fill, contain, cover, none and scale-down
+
+1- 7 scroll-snap-align
+its values: none, start, end and center
 
   2 - Pseudo-class
-:focus
+
+2- 1 :focus
+
 :focus-within
 :visited
 :active
@@ -49,17 +67,49 @@ scroll-snap-align
   5 - Pseudo-element value
 attr()
   */
+  body {
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+  }
+  div:nth-of-type(1),
+  div:nth-of-type(2),
+  div:nth-of-type(3),
+  div:nth-of-type(4),
+  div:nth-of-type(5) {
+    width: 8vw;
+    height: 8vw;
+    color: white;
+    border-radius: 60px;
+    transform: translate(100%, 30%);
+    background-color: black;
+    cursor: all-scroll;
+    text-align: center;
+    pointer-events: stroke;
+    outline: 10px ridge rgba(250, 150, 0, .6);
+  }
+  div:nth-of-type(2) {
+    cursor: not-allowed;
+  }
+  div:nth-of-type(3) {
+    cursor: grab;
+    filter: drop-shadow(16px 16px 16px lightgreen) invert(75%);
+  }
+  div:nth-of-type(4) {
+    cursor: wait;
+  }
+  div:nth-of-type(5) {
+    cursor: alias;
+    outline-width: 1rem solid;
+  }
 </style>
 <body>
 <header>
   <h1>All the small things</h1>
-  <ol>
-    <li>
-      Cursor
-    <ul>
-      <li>General: </li>
-    </ul>
-  </ol>
+  <div>all-scroll<br> pointer</div>
+  <div>not-allowed</div>
+  <div>grab</div>
+  <div>wait</div>
+  <div>alias</div>
 </header>
 </body>
 </html>
