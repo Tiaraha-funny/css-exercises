@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,11 +37,11 @@ Filter makes an effect on color and make a blur of an image. It causes the work 
 Apperance is based on operating system.
 It has two charracteres:
 -moz-appearrance for supported by firefox.
--webkit-appearance for : webKit-based: Safari and blink-based: chrome and Opera.
+-webkit-appearance for : is a way to override every effect in a code. webKit-based: Safari and blink-based: chrome and Opera.
 
 1- 6 object-fit
 Object-fit sets the content to fit the box which resizes the image or video.
-Followed by these values: fill, contain, cover, none and scale-down
+Followed by these values: fill, contain, cover, none and scale-down of background-size
 
 1- 7 scroll-snap-align
 its values: none, start, end and center
@@ -48,29 +49,50 @@ its values: none, start, end and center
   2 - Pseudo-class
 
 2- 1 :focus
+It is a way that we can shange the color-style of property
 
-:focus-within
-:visited
-:active
-:target
-:disabled
-:empty
-:not()
-:matches()
+2- 2 :focus-within
+The box that is contained is focused and something with unit is focus-within
+
+2- 3 :visited
+
+
+2- 4 :active
+
+
+2- 5 :target
+It makes the backgrounde colored
+
+2- 6 :disabled
+It doen't allow you to click on the elements
+
+2- 7 :empty
+It points the element which has no contents
+
+2- 8 :not()
+
+
+2- 9 :matches()
+It is the opposite of not()
 
   3 - Pseudo-element
-::first-letter
+
+3- 1 ::first-letter
+It selectws a inline-element
 
   4 - A mysterious block
 @supports
+It is used for supporting the browsers
 
   5 - Pseudo-element value
-attr()
+attr() stands for an attribute.
+
   */
   body {
     display: grid;
     grid-template-columns: repeat(5, 300px);
   }
+
   div:nth-of-type(1),
   div:nth-of-type(2),
   div:nth-of-type(3),
@@ -87,29 +109,35 @@ attr()
     pointer-events: stroke;
     outline: 10px ridge rgba(250, 150, 0, .6);
   }
+
   div:nth-of-type(2) {
     cursor: not-allowed;
   }
+
   div:nth-of-type(3) {
     cursor: grab;
     filter: drop-shadow(16px 16px 16px lightgreen) invert(75%);
   }
+
   div:nth-of-type(4) {
     cursor: wait;
   }
+
   div:nth-of-type(5) {
     cursor: alias;
     outline-width: 1rem solid;
   }
 </style>
+
 <body>
-<header>
-  <h1>All the small things</h1>
-  <div>all-scroll<br> pointer</div>
-  <div>not-allowed</div>
-  <div>grab</div>
-  <div>wait</div>
-  <div>alias</div>
-</header>
+  <header>
+    <h1>All the small things</h1>
+    <div>all-scroll<br> pointer</div>
+    <div>not-allowed</div>
+    <div>grab</div>
+    <div>wait</div>
+    <div>alias</div>
+  </header>
 </body>
+
 </html>
