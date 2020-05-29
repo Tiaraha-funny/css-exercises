@@ -32,7 +32,7 @@ body {
   justify-content: space-between;
 }
 
-.navigation__list a {
+.navigation__list_item a {
   text-decoration: none;
   color: var(--inverse-colour);
 }
@@ -40,7 +40,7 @@ body {
 .navigation__list--menu > li {
 }
 
-.navigation__list {
+.navigation__list_item {
   flex-grow: 1;
   border-radius: var(--nav-tab-radius-amount);
   background-color: var(--secondary-colour);
@@ -52,15 +52,15 @@ body {
   padding-block-end: var(--nav-tab-vertical-padding);
 }
 
-.navigation__list__inactive {
+.navigation__list_item--inactive {
   font-size: var(--nav-font-size);
 }
 
-.navigation__list__active {
+.navigation__list_item--active {
 
 }
 
-.navigation__list__active:active {
+.navigation__list_item--active:active {
   font-size: var(--nav-active-font-size);
   background-color: var(--primary-colour);
   padding-inline-start: var(--nav-active-tab-vertical-padding);
