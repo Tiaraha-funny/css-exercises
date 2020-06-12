@@ -13,16 +13,33 @@
 }
 
 /* 4 */
-[data-example="4"] {
-
+[data-example="4"] > .centred {
+  transform: translate(0%, 100%);
+  text-align: center;
+}
+[data-example="4"] > .centred p {
+  display: inline-block;
 }
 
 /* 5 */
 [data-example="5"] {
-
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+[data-example="5"] > .centred {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+[data-example="5"] > .centred p {
+  max-width: max-content;
+  margin: auto;
 }
 
 /* 6 */
-[data-example="6"] {
-
+[data-example="6"] .centred {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
 }
