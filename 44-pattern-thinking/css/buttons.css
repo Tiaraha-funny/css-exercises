@@ -15,16 +15,33 @@
 }
 
 /* 10 */
-[data-example="10"] {
-
+[data-example="10"] .button {
+  position: relative;
+  width: 70%;
 }
-
+[data-example="10"] span:before {
+  content: url(../images/icon_heart.svg);
+  position: absolute;
+  padding-left: 3rem;
+  left: 0;
+  top: 1;
+  width: 1rem;
+}
 /* 11 */
-[data-example="11"] {
-
+[data-example="11"] .button {
+  background-image: url(../images/icon_heart.svg);
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: left;
 }
-
+[data-example="11"] span {
+  padding-inline-start: 3rem;
+  padding-inline-end: 3rem;
+}
 /* 12 */
-[data-example="12"] {
-
+[data-example="12"] img {
+  width: 1rem;
+}
+[data-example="12"] .button {
+  width: 50%;
 }
